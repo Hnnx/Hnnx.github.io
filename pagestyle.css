@@ -1,0 +1,646 @@
+﻿
+body {
+    background: linear-gradient(90deg, rgba(162, 47, 241, 0.89), #a4d8ff);
+}
+
+#center {
+    margin: auto;
+    width: 800px;
+    height: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 20px 10px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: 'Michroma', sans-serif;
+    letter-spacing: 8px;
+    margin: 0px 50px 0px 50px;
+    padding: 0px 20px 0px 20px;
+    position: relative;
+    z-index: 2;
+    cursor:default;
+}
+
+
+.focus-in-expand {
+    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation-delay: .7s;
+}
+
+
+#hr {
+    width: 300px;
+    position: relative;
+    animation: widen 1s forwards;
+    animation-delay: 2s;
+}
+
+#bgNav {
+    width: 160px;
+    margin: auto;
+}
+
+
+#avatar {
+    max-width: 200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid #B952C4 2px;
+}
+
+.EN_SI {
+    width: 35px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.skilltag {
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.tagNamesSkills {
+    font-size: 25px;
+    letter-spacing: 5px;
+    cursor: alias;
+}
+
+.tagNamesProjects {
+    font-size: 25px;
+    letter-spacing: 5px;
+    cursor: alias;
+}
+
+.tagNamesAbout {
+    font-size: 25px;
+    letter-spacing: 5px;
+    cursor: alias;
+}
+
+.tagNamesContact {
+    font-size: 25px;
+    letter-spacing: 5px;
+    cursor: alias;
+}
+
+.plakat {
+    color: black;
+    margin: auto;
+    width: 600px;
+    position: relative;
+}
+
+.vertibox {
+    margin: auto;
+    width: 590px;
+}
+
+p {
+    font-family: 'Michroma', sans-serif;
+    color: white;
+}
+
+.projectText {
+    letter-spacing: 1px;
+}
+
+.skillbox {
+    background-color: #B952C4;
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    border-radius: 8px;
+}
+
+
+.boxtextHTML {
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#dgPic {
+    border: solid black 5px;
+    border-radius: 7px;
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    border-radius: 8px;        
+}
+
+#dgPic:hover{
+    animation: resize-on-hover 1s forwards;
+}
+
+#pics {
+    width: auto;
+    margin-bottom: 10px;
+}
+
+
+#dgPic2 {
+    border: solid black 5px;
+    border-radius: 7px;
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    border-radius: 8px;
+}
+
+#dgPic2:hover{
+    animation: resize-on-hover 1s forwards;
+}
+
+
+
+.boxtextProjects {
+    font-size: 12px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.boxtextAbout p {
+    font-size: 12px;
+    text-align: justify;
+    text-justify: inter-word;
+    letter-spacing: 1px;
+}
+
+
+.boxtextContact {
+    text-align: justify;
+    text-justify: inter-word;
+    height:160px;
+}
+
+.bgBar {
+    background: black;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.projectList {
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    list-style: disc;
+    margin: 5px;
+    letter-spacing: 1px;
+}
+
+.links a p {
+    display: inline-block;
+    display: none;
+    color: black;
+    width: 120px;
+}
+
+
+/* >>> HTML <<<<*/
+
+.htmlBar {
+    position: relative;
+    width: 96%;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(90deg, #B952C4 0%, rgba(223,160,255,1) 100%);
+    border-radius: 30px 0px 0px 0px;
+    height: 20px;
+    animation: appear 3s forwards;
+}
+
+.textProcentHTML {
+    position: absolute;
+    bottom: -23px;
+    left: 241px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/* >>>> CSS <<<<*/
+
+.cssBar {
+    position: relative;
+    width: 85%;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(90deg, rgba(222,55,227,1) 0%, rgba(223,160,255,1) 100%);
+    border-radius: 30px 0px 0px 0px;
+    height: 20px;
+    animation: appear 3s forwards;
+}
+
+.textProcentCSS {
+    position: absolute;
+    bottom: -23px;
+    left: 215px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+/* >>>> JavaScript <<<< */
+
+.jsBar {
+    position: relative;
+    width: 35%;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(90deg, rgba(222,55,227,1) 0%, rgba(223,160,255,1) 100%);
+    border-radius: 30px 0px 0px 0px;
+    height: 20px;
+    animation: appear 3s forwards;
+}
+
+.textProcentJS {
+    position: absolute;
+    bottom: -23px;
+    left: 66px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/* >>>> Java <<<<*/
+
+.javaBar {
+    position: relative;
+    width: 55%;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(90deg, rgba(222,55,227,1) 0%, rgba(223,160,255,1) 100%);
+    border-radius: 30px 0px 0px 0px;
+    height: 20px;
+    animation: appear 3s forwards;
+}
+
+.textProcentJava {
+    position: absolute;
+    bottom: -23px;
+    left: 126px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/*>>>> C# <<<<*/
+.csBar {
+    position: relative;
+    width: 70%;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(90deg, rgba(222,55,227,1) 0%, rgba(223,160,255,1) 100%);
+    border-radius: 30px 0px 0px 0px;
+    height: 20px;
+    animation: appear 3s forwards;
+}
+
+.textProcentCS {
+    position: absolute;
+    bottom: -23px;
+    left: 172px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/* >>>> SQL <<<< */
+.sqlBar {
+    position: relative;
+    width: 90%;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(90deg, rgba(222,55,227,1) 0%, rgba(223,160,255,1) 100%);
+    border-radius: 30px 0px 0px 0px;
+    height: 20px;
+    animation: appear 3s forwards;
+}
+
+
+.textProcentSQL {
+    position: absolute;
+    bottom: -23px;
+    left: 230px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+footer {
+    height: 30px;
+    -webkit-box-shadow: 4px 6px 18px -3px rgba(0,0,0,0.65);
+    -moz-box-shadow: 4px 6px 18px -3px rgba(0,0,0,0.65);
+    box-shadow: 4px 6px 18px -3px rgba(0,0,0,0.65);
+    background-color: rgba(142, 142, 142, 0.77);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+    footer p {
+        color: black;
+        animation: appear 5s forwards;
+        margin-top: 2px;
+    }
+
+
+.footerOk {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    font-size: 10px;
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    text-align: center;
+    margin-left: 22px;
+}
+
+
+.rotated {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+#arrowSkill {
+    transition: all .5s ease;
+    width: 21px;
+    margin-left: 145px;
+    margin-right: -180px;
+}
+
+#arrowSkillSI {
+    transition: all .5s ease;
+    width: 21px;
+    margin-left: 55px;
+    margin-right: -120px;
+}
+
+#arrowProject {
+    transition: all .5s ease;
+    width: 21px;
+    margin-left: 90px;
+    margin-right: -150px;
+}
+
+#arrowProjectSI {
+    transition: all .5s ease;
+    width: 21px;
+    margin-left: 80px;
+    margin-right: -165px;
+}
+
+#arrowAbout {
+    transition: all .5s ease;
+    width: 21px;
+    margin-left: 130px;
+    margin-right: -190px;
+}
+
+#arrowAboutSI {
+    transition: all .5s ease;
+    width: 21px;
+    margin-left: 120px;
+    margin-right: -180px;
+}
+
+#arrowContact {
+    transition: all .5s ease;
+    width: 21px;
+    margin-left: 110px;
+    margin-right: -152px;
+}
+
+#arrowContactSI {
+    transition: all .5s ease;
+    width: 21px;
+    margin-left: 95px;
+    margin-right: -150px;
+}
+
+.contactList {
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.7px;
+    list-style: none;
+}
+
+    .contactList li {
+        border-radius: 5px;
+        margin: 10px 0px 10px 0px;
+        padding-left: 20px;
+    }
+
+
+    .contactList a {
+        color: white;
+        font-size: 12px;
+        text-decoration: none;
+        color: white;
+        width:100%;
+        font-weight:600;
+        letter-spacing:1.5px;
+    }
+
+    .contactList li:hover {
+        animation: contactPop ease-in-out forwards 200ms;
+        background-color: rgba(154, 154, 154, 0.26);
+        width: 70%;
+    }
+
+.upcomingList {
+    font-family: 'Michroma', sans-serif;
+    color:white;
+}
+
+
+
+
+
+.footerOk:hover {
+    background-color: rgba(222,55,227,1);
+    color: white;
+}
+
+#icons {
+    position: relative;
+    top: -20px;
+    font-size: 11px;
+    font-family: 'Michroma', sans-serif;
+    animation: appear 5s forwards;
+    display: none;
+}
+
+
+/*>>>> animation stuff <<<<*/
+@keyframes widen {
+    0% {
+        width: 300px;
+    }
+
+    100% {
+        width: 520px;
+    }
+}
+
+@keyframes contactPop{
+    100% {
+        font-size: 15px;
+        
+    }
+}
+
+
+@keyframes rainbowTitle {
+    0%,100% {
+        color: black;
+    }
+
+    20% {
+        color: rgba(162, 47, 241, 0.89);
+    }
+
+    50% {
+        color: #6761ef;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ----------------------------------------------
+* Generated by Animista on 2019-7-16 17:33:55
+* w: http://animista.net, t: @cssanimista
+* ---------------------------------------------- */
+
+/**
+* ----------------------------------------
+* animation focus-in-expand
+* ----------------------------------------
+*/
+@-webkit-keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/* ----------------------------------------------
+* Generated by Animista on 2019-7-16 17:35:43
+* w: http://animista.net, t: @cssanimista
+* ---------------------------------------------- */
+
+/**
+* ----------------------------------------
+* animation tracking-in-expand
+* ----------------------------------------
+*/
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes resize-on-hover {
+
+    0% {
+        width:300px;
+    }
+
+    100%{
+        width:810px;
+        height:690px;
+    }
+}
+
+
+
+
+
+
+/*>>>> animation stuff <<<<*/
