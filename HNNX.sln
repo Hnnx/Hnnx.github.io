@@ -4,6 +4,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{779B7D71-1B3E-4D3F-8288-2AC9CF886471}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\hnnx.github.io-master\index.html = ..\..\..\Desktop\hnnx.github.io-master\index.html
+		..\..\..\Desktop\hnnx.github.io-master\indexSI.html = ..\..\..\Desktop\hnnx.github.io-master\indexSI.html
+		..\..\..\Desktop\hnnx.github.io-master\pagestyle.css = ..\..\..\Desktop\hnnx.github.io-master\pagestyle.css
+		..\..\..\Desktop\hnnx.github.io-master\script.js = ..\..\..\Desktop\hnnx.github.io-master\script.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
