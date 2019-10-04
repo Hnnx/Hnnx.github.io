@@ -1,7 +1,7 @@
 ﻿* {
     padding: 0px;
     margin: 0px;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,19 +10,17 @@ body {
     background: -webkit-linear-gradient(90deg, rgba(0,27,11,1) 10%, rgba(0,207,135,1) 50%, rgba(0,59,73,1) 90%);
     background: linear-gradient(90deg, rgba(0,27,11,1) 10%, rgba(0,207,135,1) 50%, rgba(0,59,73,1) 90%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#001b0b",endColorstr="#003b49",GradientType=1);
-
     font-family: 'Michroma', sans-serif;
 }
 
 #center {
-    border: solid black 12px;
     margin: auto;
     width: 85%;
-    max-width:900px;
+    max-width: 900px;
     text-align: center;
 }
 
-#dot{
+#dot {
     animation: dotted 1500ms infinite;
     animation-delay: 2s;
 }
@@ -53,8 +51,8 @@ h1 {
 
 
 #hr {
-    width:30%;
-    margin:auto;
+    width: 30%;
+    margin: auto;
     animation: widen 1s forwards;
     animation-delay: 2s;
 }
@@ -66,7 +64,7 @@ h1 {
 
 
 #avatar {
-    margin-top:20px;
+    margin-top: 20px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -85,7 +83,7 @@ h1 {
 
 .vertibox {
     margin: auto;
-    width:68%;
+    width: 68%;
     font-size: 1.4em;
 }
 
@@ -97,9 +95,6 @@ h1 {
 /* >>>>> ARTICLE / CONTENT  <<<<< */
 
 
-
-
-
 p {
     color: white;
 }
@@ -109,19 +104,22 @@ p {
 }
 
 .skillbox {
-    background-color:rgba(129, 129, 129, 0.17);
-    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
-    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
-    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    background-color: rgba(129, 129, 129, 0.45);
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(129, 129, 129, 0.45);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(129, 129, 129, 0.45);
+    box-shadow: 4px 6px 5px 0px rgba(129, 129, 129, 0.45);
     border-radius: 6px;
+    margin: 20px 0px 20px 0px;
 }
 
 
 .boxtextHTML {
-    font-size: 20px;
+    font-size: .6em;
     text-align: justify;
     text-justify: inter-word;
 }
+
+
 
 #dgPic {
     border: solid black 5px;
@@ -129,11 +127,12 @@ p {
     -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
     -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
     box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
-    border-radius: 8px;        
+    border-radius: 8px;
+    
 }
 
     #dgPic:hover {
-        animation: resize-on-hover 1500ms ease-in-out;
+        animation: resize-on-hover 800ms forwards;
     }
 
 #pics {
@@ -152,7 +151,8 @@ p {
 }
 
     #dgPic2:hover {
-        animation: resize-on-hover 1500ms ease-in-out;
+        animation: resize-on-hover 800ms forwards;
+        
     }
 
 
@@ -163,7 +163,7 @@ p {
     text-justify: inter-word;
 }
 
-.boxtextAbout p {
+.boxtextAbout {
     font-size: 12px;
     text-align: justify;
     text-justify: inter-word;
@@ -174,7 +174,6 @@ p {
 .boxtextContact {
     text-align: justify;
     text-justify: inter-word;
-    height:160px;
 }
 
 .bgBar {
@@ -456,9 +455,9 @@ footer {
         font-size: 12px;
         text-decoration: none;
         color: white;
-        width:100%;
-        font-weight:600;
-        letter-spacing:1.5px;
+        width: 100%;
+        font-weight: 600;
+        letter-spacing: 1.5px;
     }
 
     .contactList li:hover {
@@ -469,7 +468,7 @@ footer {
 
 .upcomingList {
     font-family: 'Michroma', sans-serif;
-    color:white;
+    color: white;
 }
 
 
@@ -502,10 +501,9 @@ footer {
     }
 }
 
-@keyframes contactPop{
+@keyframes contactPop {
     100% {
         font-size: 15px;
-        
     }
 }
 
@@ -618,26 +616,27 @@ footer {
 @keyframes resize-on-hover {
 
     0% {
-        width:300px;
+        width: 300px;
+        height: auto;
     }
 
-    100%{
-        width:810px;
-        height:690px;
+    100% {
+        width: 600px;
+        height: auto;
     }
 }
 
-@keyframes dotted{
-    0%{
+@keyframes dotted {
+    0% {
         opacity: 0;
     }
 
-    100%{
-        opacity:1;
+    100% {
+        opacity: 1;
     }
 }
 
-@keyframes rotatingGlow{
+@keyframes rotatingGlow {
     0% {
         transform: rotate(0deg);
         -webkit-box-shadow: 0px 0px 42px 10px rgba(238,255,0,0);
@@ -667,6 +666,8 @@ footer {
         box-shadow: 0px 0px 42px 10px rgba(238,255,0,0);
     }
 }
+
+@keyframes
 
 
 
