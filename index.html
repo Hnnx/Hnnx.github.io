@@ -17,29 +17,40 @@
                 $(".boxtextHTML").slideToggle(600);
 
 
-            }).//click(); breakd
+            }).click();
         }
 
         );
 
+        $(".boxtextHTML").click(function () {
+            this.toggleClass('redProject');
+            this.toggleClass('blueProject');
+        })
+
 
         $(document).ready(function () {
             $(".tagNamesProjects").click(function () {
-                $(".boxtextProjects").slideToggle(600);
+                $("#projectBox").slideToggle(600);
 
             }).click();
-});
+        });
+
+        $(".tagNamesProjects").click(function () {
+            $(this).toggleClass('redProject');
+            $(this).toggleClass('blueProject');
+        })
+        
 
         $(document).ready(function () {
             $(".tagNamesAbout").click(function () {
-                $(".boxtextAbout").slideToggle(600);
+                $("#aboutBox").slideToggle(600);
 
             }).click();
         });
 
         $(document).ready(function () {
             $(".tagNamesContact").click(function () {
-                $(".boxtextContact").slideToggle(600);
+                $("#contactBox").slideToggle(600);
 
             }).click();
         });
@@ -184,7 +195,7 @@
             <div class="tagNamesProjects">
                 <p id="#projects" class="skillbox"><span class="tracking-in-expand">PROJECTS</span></p>
             </div>
-            <div class="boxtextProjects">
+            <div id="projectBox" class="boxtext">
                 <div>
                     <p class="projectText">
                         Currently working on a text/shell based RPG written in Java and C#.<br />
@@ -226,9 +237,9 @@
                 </div>
             </div>
             <div class="tagNamesAbout">
-                <p id="about" class="skillbox"><span class="tracking-in-expand">ABOUT</span> <img id="arrowAbout" src="https://user-images.githubusercontent.com/9198025/61309962-97f7c600-a7f3-11e9-879f-a0f2a889c8ef.png" /></p>
+                <p id="about" class="skillbox"><span class="tracking-in-expand">ABOUT</span></p>
             </div>
-            <div class="boxtextAbout">
+            <div id="aboutBox" class="boxtext">
                 <div>
                     <p>
                         An avid <strong>Eclipse</strong> user, lately stuck in <strong>.NET framework</strong> because it scratches both my front and back end itch.<br>
@@ -250,9 +261,9 @@
 
             <div class="tagNamesContact">
 
-                <p id="contact" class="skillbox"><span class="tracking-in-expand">CONTACT</span> <img id="arrowContact" src="https://user-images.githubusercontent.com/9198025/61309962-97f7c600-a7f3-11e9-879f-a0f2a889c8ef.png" /></p>
+                <p id="contact" class="skillbox"><span class="tracking-in-expand">CONTACT</span></p>
             </div>
-            <div class="boxtextContact">
+            <div id="contactBox" class="boxtext">
 
                 <p>
                     <ul class="contactList">

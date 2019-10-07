@@ -5,11 +5,11 @@
 }
 
 body {
-    background: rgb(0,27,11);
-    background: -moz-linear-gradient(90deg, rgba(0,27,11,1) 10%, rgba(0,207,135,1) 50%, rgba(0,59,73,1) 90%);
-    background: -webkit-linear-gradient(90deg, rgba(0,27,11,1) 10%, rgba(0,207,135,1) 50%, rgba(0,59,73,1) 90%);
-    background: linear-gradient(90deg, rgba(0,27,11,1) 10%, rgba(0,207,135,1) 50%, rgba(0,59,73,1) 90%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#001b0b",endColorstr="#003b49",GradientType=1);
+    background: rgb(0,138,87);
+    background: -moz-linear-gradient(90deg, rgba(0,138,87,1) 0%, rgba(26,134,135,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,138,87,1) 0%, rgba(26,134,135,1) 100%);
+    background: linear-gradient(90deg, rgba(0,138,87,1) 0%, rgba(26,134,135,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#008a57",endColorstr="#1a8687",GradientType=1);
     font-family: 'Michroma', sans-serif;
 }
 
@@ -113,6 +113,10 @@ p {
     margin: 20px 0px 20px 0px;
 }
 
+    .skillbox:hover {
+        background-color: rgb(255,123,0);
+    }
+
 
 .boxtextHTML {
     font-size: .6em;
@@ -121,60 +125,11 @@ p {
 }
 
 
-
-#dgPic {
-    border: solid black 5px;
-    border-radius: 7px;
-    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
-    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
-    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
-    border-radius: 8px;
-    
-}
-
-    #dgPic:hover {
-        animation: resize-on-hover 800ms forwards;
-    }
-
-#pics {
-    width: auto;
-    margin-bottom: 10px;
-}
-
-
-#dgPic2 {
-    border: solid black 5px;
-    border-radius: 7px;
-    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
-    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
-    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
-    border-radius: 8px;
-}
-
-    #dgPic2:hover {
-        animation: resize-on-hover 800ms forwards;
-        
-    }
-
-
-
-.boxtextProjects {
-    font-size: 12px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.boxtextAbout {
+.boxtext {
     font-size: 12px;
     text-align: justify;
     text-justify: inter-word;
     letter-spacing: 1px;
-}
-
-
-.boxtextContact {
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 .bgBar {
@@ -207,7 +162,11 @@ p {
     width: 96%;
     top: 5px;
     left: 5px;
-    background: linear-gradient(90deg, #B952C4 0%, rgba(223,160,255,1) 100%);
+    background: rgb(255,123,0);
+    background: -moz-linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    background: -webkit-linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    background: linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7b00",endColorstr="#ffd6af",GradientType=1);
     border-radius: 30px 0px 0px 0px;
     height: 20px;
     animation: appear 3s forwards;
@@ -215,9 +174,12 @@ p {
 
 .textProcentHTML {
     text-align:right;
+    margin-right:10px;
+    vertical-align:middle;
+    line-height:22px;
     font-family: 'Kanit', sans-serif;
     color: black;
-    font-size: 19px;
+    font-size: 1.55em;
     font-weight: 500;
 }
 
@@ -228,19 +190,51 @@ p {
     width: 85%;
     top: 5px;
     left: 5px;
-    background: linear-gradient(90deg, rgba(222,55,227,1) 0%, rgba(223,160,255,1) 100%);
+    background: rgb(255,123,0);
+    background: -moz-linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    background: -webkit-linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    background: linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7b00",endColorstr="#ffd6af",GradientType=1);
     border-radius: 30px 0px 0px 0px;
     height: 20px;
     animation: appear 3s forwards;
 }
 
 .textProcentCSS {
-    position: absolute;
-    bottom: -23px;
-    left: 215px;
+    text-align: right;
+    margin-right: 5px;
+    vertical-align: middle;
+    line-height: 22px;
     font-family: 'Kanit', sans-serif;
     color: black;
-    font-size: 19px;
+    font-size: 1.55em;
+    font-weight: 500;
+}
+
+/*>>>> C# <<<<*/
+.csBar {
+    position: relative;
+    width: 70%;
+    top: 5px;
+    left: 5px;
+    background: rgb(255,123,0);
+    background: -moz-linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    background: -webkit-linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    background: linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7b00",endColorstr="#ffd6af",GradientType=1);
+    border-radius: 30px 0px 0px 0px;
+    height: 20px;
+    animation: appear 3s forwards;
+}
+
+.textProcentCS {
+    text-align: right;
+    margin-right: 5px;
+    vertical-align: middle;
+    line-height: 22px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 1.55em;
     font-weight: 500;
 }
 
@@ -252,19 +246,24 @@ p {
     width: 35%;
     top: 5px;
     left: 5px;
-    background: linear-gradient(90deg, rgba(222,55,227,1) 0%, rgba(223,160,255,1) 100%);
+    background: rgb(255,123,0);
+    background: -moz-linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    background: -webkit-linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    background: linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7b00",endColorstr="#ffd6af",GradientType=1);
     border-radius: 30px 0px 0px 0px;
     height: 20px;
     animation: appear 3s forwards;
 }
 
 .textProcentJS {
-    position: absolute;
-    bottom: -23px;
-    left: 66px;
+    text-align: right;
+    margin-right: 5px;
+    vertical-align: middle;
+    line-height: 22px;
     font-family: 'Kanit', sans-serif;
     color: black;
-    font-size: 19px;
+    font-size: 1.55em;
     font-weight: 500;
 }
 
@@ -275,43 +274,27 @@ p {
     width: 55%;
     top: 5px;
     left: 5px;
-    background: linear-gradient(90deg, rgba(222,55,227,1) 0%, rgba(223,160,255,1) 100%);
+    background: rgb(255,123,0);
+    background: -moz-linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    background: -webkit-linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    background: linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7b00",endColorstr="#ffd6af",GradientType=1);
     border-radius: 30px 0px 0px 0px;
     height: 20px;
     animation: appear 3s forwards;
 }
 
 .textProcentJava {
-    position: absolute;
-    bottom: -23px;
-    left: 126px;
+    text-align: right;
+    margin-right: 5px;
+    vertical-align: middle;
+    line-height: 22px;
     font-family: 'Kanit', sans-serif;
     color: black;
-    font-size: 19px;
+    font-size: 1.55em;
     font-weight: 500;
 }
 
-/*>>>> C# <<<<*/
-.csBar {
-    position: relative;
-    width: 70%;
-    top: 5px;
-    left: 5px;
-    background: linear-gradient(90deg, rgba(222,55,227,1) 0%, rgba(223,160,255,1) 100%);
-    border-radius: 30px 0px 0px 0px;
-    height: 20px;
-    animation: appear 3s forwards;
-}
-
-.textProcentCS {
-    position: absolute;
-    bottom: -23px;
-    left: 172px;
-    font-family: 'Kanit', sans-serif;
-    color: black;
-    font-size: 19px;
-    font-weight: 500;
-}
 
 /* >>>> SQL <<<< */
 .sqlBar {
@@ -319,7 +302,11 @@ p {
     width: 90%;
     top: 5px;
     left: 5px;
-    background: linear-gradient(90deg, rgba(222,55,227,1) 0%, rgba(223,160,255,1) 100%);
+    background: rgb(255,123,0);
+    background: -moz-linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    background: -webkit-linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    background: linear-gradient(90deg, rgba(255,123,0,1) 10%, rgba(255,214,175,1) 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7b00",endColorstr="#ffd6af",GradientType=1);
     border-radius: 30px 0px 0px 0px;
     height: 20px;
     animation: appear 3s forwards;
@@ -327,12 +314,13 @@ p {
 
 
 .textProcentSQL {
-    position: absolute;
-    bottom: -23px;
-    left: 230px;
+    text-align: right;
+    margin-right: 5px;
+    vertical-align: middle;
+    line-height: 22px;
     font-family: 'Kanit', sans-serif;
     color: black;
-    font-size: 19px;
+    font-size: 1.55em;
     font-weight: 500;
 }
 
@@ -471,6 +459,36 @@ footer {
 }
 
 
+#dgPic {
+    border: solid black 5px;
+    border-radius: 7px;
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    border-radius: 8px;
+}
+
+    #dgPic:hover {
+        animation: resize-on-hover 800ms forwards;
+    }
+
+
+
+
+#dgPic2 {
+    border: solid black 5px;
+    border-radius: 7px;
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.39);
+    border-radius: 8px;
+}
+
+    #dgPic2:hover {
+        animation: resize-on-hover 800ms forwards;
+    }
+
+
 
 
 
@@ -496,7 +514,7 @@ footer {
     }
 
     100% {
-        width: 100%;
+        width: 85%;
     }
 }
 
@@ -506,20 +524,6 @@ footer {
     }
 }
 
-
-@keyframes rainbowTitle {
-    0%,100% {
-        color: black;
-    }
-
-    20% {
-        color: rgba(162, 47, 241, 0.89);
-    }
-
-    50% {
-        color: #6761ef;
-    }
-}
 
 @keyframes appear {
     0% {
