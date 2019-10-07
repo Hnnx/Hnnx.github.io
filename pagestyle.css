@@ -214,9 +214,7 @@ p {
 }
 
 .textProcentHTML {
-    position: absolute;
-    bottom: -23px;
-    left: 241px;
+    text-align:right;
     font-family: 'Kanit', sans-serif;
     color: black;
     font-size: 19px;
