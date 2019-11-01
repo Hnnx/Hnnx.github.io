@@ -17,42 +17,29 @@
                 $(".boxtextHTML").slideToggle(600);
 
 
-            }).click();
+            })
         }
-
         );
-
-        $(".boxtextHTML").click(function () {
-            this.toggleClass('redProject');
-            this.toggleClass('blueProject');
-        })
-
 
         $(document).ready(function () {
             $(".tagNamesProjects").click(function () {
                 $("#projectBox").slideToggle(600);
 
-            }).click();
+            })
         });
-
-        $(".tagNamesProjects").click(function () {
-            $(this).toggleClass('redProject');
-            $(this).toggleClass('blueProject');
-        })
-        
 
         $(document).ready(function () {
             $(".tagNamesAbout").click(function () {
                 $("#aboutBox").slideToggle(600);
 
-            }).click();
+            })
         });
 
         $(document).ready(function () {
             $(".tagNamesContact").click(function () {
                 $("#contactBox").slideToggle(600);
 
-            }).click();
+            })
         });
 
     </script>
@@ -65,87 +52,6 @@
             })
         })
     </script>
-
-
-    <!-- Anonymous user - jQuery rotation -->
-
-    <script>
-
-        //Skills Tab Rotation
-        $(document).ready(function () {
-            var degrees = 0;
-            $('.tagNamesSkills').click(function rotateMe(e) {
-
-                degrees += 180;
-
-                $('#arrowSkill').css({
-
-                    'transform': 'rotate(' + degrees + 'deg)',
-                    '-ms-transform': 'rotate(' + degrees + 'deg)',
-                    '-moz-transform': 'rotate(' + degrees + 'deg)',
-                    '-webkit-transform': 'rotate(' + degrees + 'deg)',
-                    '-o-transform': 'rotate(' + degrees + 'deg)',
-                });
-            })
-        });
-
-        //Projects Tab Rotation
-        $(document).ready(function () {
-            var degrees = 0;
-            $('.tagNamesProjects').click(function rotateMe(e) {
-
-                degrees += 180;
-
-                $('#arrowProject').css({
-
-                    'transform': 'rotate(' + degrees + 'deg)',
-                    '-ms-transform': 'rotate(' + degrees + 'deg)',
-                    '-moz-transform': 'rotate(' + degrees + 'deg)',
-                    '-webkit-transform': 'rotate(' + degrees + 'deg)',
-                    '-o-transform': 'rotate(' + degrees + 'deg)'
-                });
-            })
-        });
-
-        //About Tab Rotation
-        $(document).ready(function () {
-            var degrees = 0;
-            $('.tagNamesAbout').click(function rotateMe(e) {
-
-                degrees += 180;
-
-                $('#arrowAbout').css({
-
-                    'transform': 'rotate(' + degrees + 'deg)',
-                    '-ms-transform': 'rotate(' + degrees + 'deg)',
-                    '-moz-transform': 'rotate(' + degrees + 'deg)',
-                    '-webkit-transform': 'rotate(' + degrees + 'deg)',
-                    '-o-transform': 'rotate(' + degrees + 'deg)'
-                });
-            })
-        });
-
-        //Contact Tab Rotation
-        $(document).ready(function () {
-            var degrees = 0;
-            $('.tagNamesContact').click(function rotateMe(e) {
-
-                degrees += 180;
-
-                $('#arrowContact').css({
-
-                    'transform': 'rotate(' + degrees + 'deg)',
-                    '-ms-transform': 'rotate(' + degrees + 'deg)',
-                    '-moz-transform': 'rotate(' + degrees + 'deg)',
-                    '-webkit-transform': 'rotate(' + degrees + 'deg)',
-                    '-o-transform': 'rotate(' + degrees + 'deg)'
-                });
-            })
-        });
-
-
-    </script>
-
 
 </head>
 <body>
@@ -209,17 +115,7 @@
                         <li>Re-write in C#</li>
                         <li>Note the syntax/performance difference</li>
                     </ul>
-                    <hr id="pics" />
 
-                    <!-- REWORK THE ENTIRE "gallery" IDEA
-    <p class="projectText">Example of choosing name and assigning Health Points in Java and C#</p>
-
-
-
-    <img id="dgPic" src="https://user-images.githubusercontent.com/9198025/60808598-00f29480-a189-11e9-8d32-5a57ef842bbd.PNG" alt="dumbgeon" width="400" height="300" />
-    <hr id="pics" />
-    <img id="dgPic2" src="https://user-images.githubusercontent.com/9198025/60809836-ee2d8f00-a18b-11e9-8219-70a30c093766.PNG" alt="dumbgeon2" width="400" height="300" />
-        -->
                     <p>Upcoming projects :</p>
                     <ul class="projectList">
                         <li>1 SITE / WEEK (static)</li>
