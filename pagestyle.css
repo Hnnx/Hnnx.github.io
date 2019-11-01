@@ -73,15 +73,10 @@ h1 {
     font-size: 25px;
 }
 
-
-
 /* <<<<< HEADER / LANG / NAV  >>>>> */
 
 
-
-
 /* >>>>> ARTICLE / CONTENT  <<<<< */
-
 
 
 .skillbox {
@@ -127,6 +122,11 @@ h1 {
     color:rgba(0,0,0,0.75);
     padding: 10px;
     line-height:25px;
+}
+
+.projectList li{
+  margin: 0px 0px 0px 20px;
+  list-style: initial;
 }
 
 .links a p {
@@ -314,10 +314,6 @@ h1 {
     -o-transform: rotate(180deg);
 }
 
-li::before {
-    content: "● ";
-}
-
 
 /*  LINKS / RESETS */
 
@@ -334,7 +330,7 @@ a:active {
 
 .contactList {
     font-family: 'Michroma', sans-serif;
-    font-size: 12px;
+    font-size: .65rem;
     letter-spacing: 0.7px;
 }
 
@@ -406,6 +402,10 @@ footer {
       background: grey;
     }
 
+    .skillbox {
+        margin: 3px;
+    }
+
 
     .EN_SI {
         max-width: 5%;
@@ -430,21 +430,26 @@ footer {
         font-size: 25px;
     }
 
-    #bgNav {
-        width: 45%;
-        margin: auto;
-    }
 
     #center {
         width: 100%;
     }
 
     footer {
-        height: 45px;
+        height: 55px;
         line-height: 17px;
 
     }
 
+    .boxtextHTML {
+        display:block;
+    }
+
+    .boxtext{
+      display: block;
+      letter-spacing: 0px;
+      font-size: .7rem;
+    }
 }
 
 /*>>>> animation stuff <<<<*/
