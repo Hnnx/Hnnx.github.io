@@ -132,13 +132,12 @@ h1 {
 
 
 .boxtext {
+    padding: 0px 20px 0px 20px;
     text-align: justify;
     text-justify: inter-word;
     letter-spacing: 1px;
-    display: none;
-    letter-spacing: 1px;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: .9rem;
+    font-weight: 600;
     display: none;
 }
 
@@ -150,10 +149,9 @@ h1 {
 }
 
 .projectList {
-    font-family: 'Michroma', sans-serif;
-    list-style: disc;
-    margin: 5px;
-    letter-spacing: 1px;
+    color:rgba(0,0,0,0.75);
+    padding: 10px;
+    line-height:25px;
 }
 
 .links a p {
@@ -376,7 +374,7 @@ footer {
 }
 
 li::before {
-    content: "► ";
+    content: "● ";
 }
 
 
@@ -420,9 +418,7 @@ a:active {
         width: 70%;
     }
 
-.upcomingList {
-    font-family: 'Michroma', sans-serif;
-}
+
 
 
 .footerOk:hover {
