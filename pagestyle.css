@@ -1,4 +1,4 @@
-﻿* {
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -77,9 +77,6 @@ h1 {
 
 @media only screen and (min-device-width: 480px){
 
-    body{
-        background:red;
-    }
 
     .vertibox {
         margin: auto;
