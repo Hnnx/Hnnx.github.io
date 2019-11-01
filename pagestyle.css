@@ -61,10 +61,11 @@ h1 {
 }
 
 .EN_SI {
-    max-width: 5%;
+    position: relative;
+    left: 0%;
+    top: 20px;
+    max-width: 50px;
     float: right;
-    margin-right: 20px;
-    margin-top: 10px;
 }
 
 .vertibox {
@@ -408,11 +409,21 @@ footer {
 
 
     .EN_SI {
-        max-width: 5%;
-        float: none;
-        margin-right: 20px;
-        margin-top: 10px;
+      position: relative;
+      float: none;
     }
+
+    .plakat{
+      position: relative;
+    }
+
+    .vertibox{
+      position: relative;
+      top: 10px;
+    }
+
+
+
 
     .boxtext {
         padding: 0px 20px 0px 20px;
