@@ -76,6 +76,10 @@ h1 {
 
 @media (max-width: 414px){
 
+    body{
+        background:rgba(238,255,0,0);
+    }
+
     .vertibox {
         margin: auto;
         width: 90%;
