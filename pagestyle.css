@@ -75,29 +75,6 @@ h1 {
 
 
 
-@media only screen and (min-device-width: 480px){
-
-
-    .vertibox {
-        margin: auto;
-        width: 90%;
-        font-size: 25px;
-    }
-
-    #bgNav {
-        width: 45%;
-        margin: auto;
-    }
-
-    #center {
-        width: 100%;
-    }
-
-}
-
-
-
-
 /* <<<<< HEADER / LANG / NAV  >>>>> */
 
 
@@ -421,6 +398,52 @@ a:active {
 
 .footerOk:hover {
     background-color:rgb(255,123,0);
+}
+
+
+
+@media only screen and (max-width: 1200px){
+
+    body {
+      background: grey;
+    }
+
+
+    .EN_SI {
+        max-width: 5%;
+        float: none;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .boxtext {
+        padding: 0px 20px 0px 20px;
+        text-align: justify;
+        text-justify: inter-word;
+        letter-spacing: 1px;
+        font-size: .9rem;
+        font-weight: 600;
+        display: none;
+    }
+
+
+
+
+    .vertibox {
+        margin: auto;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    #bgNav {
+        width: 45%;
+        margin: auto;
+    }
+
+    #center {
+        width: 100%;
+    }
+
 }
 
 /*>>>> animation stuff <<<<*/
