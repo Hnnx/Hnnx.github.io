@@ -399,10 +399,6 @@ footer {
 
 @media only screen and (max-width: 820px){
 
-    body {
-      background: grey;
-    }
-
     .skillbox {
         margin: 3px;
     }
@@ -425,8 +421,9 @@ footer {
       top: 10px;
     }
 
-
-
+    .greyed-out{
+      color:rgba(0,0,0,0.5);
+    }
 
     .boxtext {
         padding: 0px 20px 0px 20px;
