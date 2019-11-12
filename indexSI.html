@@ -1,333 +1,187 @@
-﻿
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>NS WEB DEN</title>
-    <meta name="description" content="NS osebna spletna stran" />
-    <link rel="stylesheet" type="text/css" href="pagestyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Michroma|Orbitron&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-    <!-- Slide tabs -->
-    <script>
-        $(document).ready(function () {
-            $(".tagNamesSkills").click(function () {
-                $(".boxtextHTML").slideToggle(600);
+  <title>NS WEB DEN</title>
+  <meta charset="utf-8" />
+  <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="NS osebna spletna stran" />
+  <link rel="stylesheet" type="text/css" href="pagestyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Michroma|Orbitron&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <!-- Slide tabs -->
+  <script>
+  $(document).ready(function () {
+    $(".tagNamesSkills").click(function () {
+      $(".boxtextHTML").slideToggle(600);
 
 
-            }).click();
-        }
+    })
+  }
+);
 
-        );
+$(document).ready(function () {
+  $(".tagNamesProjects").click(function () {
+    $("#projectBox").slideToggle(600);
 
+  })
+});
 
-        $(document).ready(function () {
-            $(".tagNamesProjects").click(function () {
-                $(".boxtextProjects").slideToggle(600);
+$(document).ready(function () {
+  $(".tagNamesAbout").click(function () {
+    $("#aboutBox").slideToggle(600);
 
-            }).click();
-        });
+  })
+});
 
-        $(document).ready(function () {
-            $(".tagNamesAbout").click(function () {
-                $(".boxtextAbout").slideToggle(600);
+$(document).ready(function () {
+  $(".tagNamesContact").click(function () {
+    $("#contactBox").slideToggle(600);
 
-            }).click();
-        });
+  })
+});
 
-        $(document).ready(function () {
-            $(".tagNamesContact").click(function () {
-                $(".boxtextContact").slideToggle(600);
+</script>
 
-            }).click();
-        });
-
-    </script>
-
-    <!-- Remove footer onclick -->
-    <script>
-        $(document).ready(function () {
-            $(".footerOk").click(function () {
-                $("#remove").hide();
-            })
-        })
-    </script>
-
-    <!-- edited jFiddle from a messaging board -->
-    <script>
-        /*   - Obsolete, turned into CSS animation instead of jQuery click method
-
-        $(document).ready(function () {
-
-            $("#dgPic").click(function () {
-                if ($(this).height() == 700) {
-                    $(this).width(600);
-                    $(this).height(500);
-                }
-                else {
-                    $(this).width(800);
-                    $(this).height(700);
-                }
-            })
-        })
-
-
-
-        $(document).ready(function () {
-
-            $("#dgPic2").click(function () {
-                if ($(this).height() == 700) {
-                    $(this).width(600);
-                    $(this).height(500);
-
-                }
-                else {
-                    $(this).width(800);
-                    $(this).height(700);
-                }
-            })
-        })
-
-*/
-
-    </script>
-
-    <!-- Anonymous user - jQuery rotation -->
-
-    <script>
-
-        //Skills Tab Rotation
-        $(document).ready(function () {
-            var degrees = 0;
-            $('.tagNamesSkills').click(function rotateMe(e) {
-
-                degrees += 180;
-
-                $('#arrowSkill').css({
-
-                    'transform': 'rotate(' + degrees + 'deg)',
-                    '-ms-transform': 'rotate(' + degrees + 'deg)',
-                    '-moz-transform': 'rotate(' + degrees + 'deg)',
-                    '-webkit-transform': 'rotate(' + degrees + 'deg)',
-                    '-o-transform': 'rotate(' + degrees + 'deg)',
-                });
-            })
-        });
-
-        //Projects Tab Rotation
-        $(document).ready(function () {
-            var degrees = 0;
-            $('.tagNamesProjects').click(function rotateMe(e) {
-
-                degrees += 180;
-
-                $('#arrowProject').css({
-
-                    'transform': 'rotate(' + degrees + 'deg)',
-                    '-ms-transform': 'rotate(' + degrees + 'deg)',
-                    '-moz-transform': 'rotate(' + degrees + 'deg)',
-                    '-webkit-transform': 'rotate(' + degrees + 'deg)',
-                    '-o-transform': 'rotate(' + degrees + 'deg)'
-                });
-            })
-        });
-
-        //About Tab Rotation
-        $(document).ready(function () {
-            var degrees = 0;
-            $('.tagNamesAbout').click(function rotateMe(e) {
-
-                degrees += 180;
-
-                $('#arrowAbout').css({
-
-                    'transform': 'rotate(' + degrees + 'deg)',
-                    '-ms-transform': 'rotate(' + degrees + 'deg)',
-                    '-moz-transform': 'rotate(' + degrees + 'deg)',
-                    '-webkit-transform': 'rotate(' + degrees + 'deg)',
-                    '-o-transform': 'rotate(' + degrees + 'deg)'
-                });
-            })
-        });
-
-        //Contact Tab Rotation
-        $(document).ready(function () {
-            var degrees = 0;
-            $('.tagNamesContact').click(function rotateMe(e) {
-
-                degrees += 180;
-
-                $('#arrowContact').css({
-
-                    'transform': 'rotate(' + degrees + 'deg)',
-                    '-ms-transform': 'rotate(' + degrees + 'deg)',
-                    '-moz-transform': 'rotate(' + degrees + 'deg)',
-                    '-webkit-transform': 'rotate(' + degrees + 'deg)',
-                    '-o-transform': 'rotate(' + degrees + 'deg)'
-                });
-            })
-        });
-
-
-    </script>
-
+<!-- Remove footer onclick -->
+<script>
+$(document).ready(function () {
+  $(".footerOk").click(function () {
+    $("#remove").hide();
+  })
+})
+</script>
 
 </head>
 <body>
-    <div id="center">
-        <nav id="navMain">
-            <a href="../hnnx.github.io/index.html"><img class="EN_SI" src="https://user-images.githubusercontent.com/9198025/63595659-c66a7d00-c5b9-11e9-87f6-f1a476474835.png" /></a>
-            <a href="../hnnx.github.io/indexSI.html"><img class="EN_SI" src="https://user-images.githubusercontent.com/9198025/63595658-c66a7d00-c5b9-11e9-8633-4356317991bc.png" /></a>
-            <div id="bgNav">
-                <img id="avatar" src="https://user-images.githubusercontent.com/9198025/59376815-2e4a4f00-8d51-11e9-9ed8-1eb74ab0760c.jpg" height="200" width="200" alt="avatar" />                
-            </div>
-        </nav>
-            <div class="plakat">
-                <h1 class="focus-in-expand">NS WEB DEN</h1>
-                <hr id="hr" />
-            </div>
-            <div class="vertibox">
-                <div class="tagNamesSkills">
-                    <p id="skills" class="skillbox">
-                        <span class="tracking-in-expand">SPRETNOSTI</span>
-                        <img id="arrowSkillSI" src="https://user-images.githubusercontent.com/9198025/61309962-97f7c600-a7f3-11e9-879f-a0f2a889c8ef.png" />
-                    </p>
-                </div>
-                <div class="boxtextHTML">
-                    <p class="skilltag">HTML</p>
-                    <div class="bgBar">
-                        <div class="htmlBar"><p class="textProcentHTML">100%</p></div>
-                    </div>
-                    <p class="skilltag">CSS</p>
-                    <div class="bgBar">
-                        <div class="cssBar"><p class="textProcentCSS">80%</p></div>
-                    </div>
-                    <p class="skilltag">C#</p>
-                    <div class="bgBar">
-                        <div class="csBar"><p class="textProcentCS">65%</p></div>
-                    </div>
-                    <p class="skilltag">JavaScript</p>
-                    <div class="bgBar">
-                        <div class="jsBar"><p class="textProcentJS">35%</p></div>
-                    </div>
-                    <p class="skilltag">Java</p>
-                    <div class="bgBar">
-                        <div class="javaBar"><p class="textProcentJava">55%</p></div>
-                    </div>
-                    <p class="skilltag">SQL</p>
-                    <div class="bgBar">
-                        <div class="sqlBar"><p class="textProcentSQL">90%</p></div>
-                    </div>
-                </div>
-
-                <div class="tagNamesProjects">
-                    <p id="#projects" class="skillbox"><span class="tracking-in-expand">PROJEKTI</span> <img id="arrowProjectSI" src="https://user-images.githubusercontent.com/9198025/61309962-97f7c600-a7f3-11e9-879f-a0f2a889c8ef.png" /></p>
-                </div>
-                <div class="boxtextProjects">
-                    <div>
-                        <p class="projectText">
-                            Trenutno delam na tekstovnem RPG-ju, spisan v Java in C# jeziku. <br />
-                            Z uporabo programskih logik (zanke, polja/matrike, try/catch izjeme) urim in utrjujem osnove.<br /><br />
-                            Moj običajen pristop:
-                        </p>
-                        <ul class="projectList">
-                            <li>Pridobitev ideje in pretvorba v psevdokodo</li>
-                            <li>Pisanje prvega osnutka v Javi</li>
-                            <li>Razhroscevanje/Ciscanje kode</li>
-                            <li>Prepis v C#</li>
-                            <li>Beleženje razlik med jeziki</li>
-                        </ul>
-                        
-                        <p class="projectText">Primer izbire imena in dodeljevanje t.i. “health points” v Javi in C#</p>
-
-
-                        <img id="dgPic" src="https://user-images.githubusercontent.com/9198025/60808598-00f29480-a189-11e9-8d32-5a57ef842bbd.PNG" alt="dumbgeon" width="400" height="300" />
-                        
-                        <img id="dgPic2" src="https://user-images.githubusercontent.com/9198025/60809836-ee2d8f00-a18b-11e9-8219-70a30c093766.PNG" alt="dumbgeon2" width="400" height="300" />
-
-                        <p>
-                            Prihodnji projekti:
-                        </p>
-                        <ul class="projectList">
-                            <li>1 stran / teden (statična)</li>
-                            <li>1 stran / teden (dinamična)</li>
-                        </ul>
-                        <p>
-                            Moj načrt je ustvariti urnik, kjer bi do konca leta enkrat tedensko postavil statično spletno stran od samega začetka.
-                            Cilj je razviti solidne temelje in spretnost HTML jezika ter s prakso doseči višji nivo. 
-                        </p>
-                        <p>
-                            V naslednjem koraku bom omenjene strani razhroščeval in dodal ščepec življenja z JavaScript-om in preizkušal razne knjižnice.
-                        </p>
-
-
-                    </div>
-                </div>
-                <div class="tagNamesAbout">
-                    <p id="about" class="skillbox"><span class="tracking-in-expand">O MENI</span> <img id="arrowAboutSI" src="https://user-images.githubusercontent.com/9198025/61309962-97f7c600-a7f3-11e9-879f-a0f2a889c8ef.png" /></p>
-                </div>
-                <div class="boxtextAbout">
-                    <div>
-                        <p>
-                            Sem <strong>Eclipse</strong> navdušenec, ki je obtičal v <strong>.NET framework-u</strong>, ker zadovolji moje front in back-end želje.<br>
-                            Še vedno se težko ločim od <strong>Atom-a</strong> za manjše in preprostejše HTML projekte.
-                        </p>
-                        <p>
-                            Kodiranje me iz dneva v dan fascinira in navdušuje, vedno sem na preži za vzorci, algoritmi – opazujem jih tako ob zaslonu kot izven tega. 
-                            Privlači me nekonvencionalno – video igre, zlasti psihološki efekt na igralca, vloga razvijalca in celoten dizajn me navdušuje od svojih prvih
-                            MS DOS naslovov in odkar sem prvič popihal na prašne Sega kartuše.
-                        </p>
-
-                        <p>
-                            Če ne kodiram ali listam po referenčnih vodnikih, bom najverjetneje opažen ob svoji šlampasti vožnji  z motorjem.
-                            Preostali čas posvešam urejanju video posnetkov v <strong>Sony Vegas</strong>-u ali pa amaterski obdelavi slik v <strong>Adobe Photoshop-u</strong>
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="tagNamesContact">
-
-                    <p id="contact" class="skillbox"><span class="tracking-in-expand">KONTAKT</span> <img id="arrowContactSI" src="https://user-images.githubusercontent.com/9198025/61309962-97f7c600-a7f3-11e9-879f-a0f2a889c8ef.png" /></p>
-                </div>
-                <div class="boxtextContact">
-
-                    <p>
-                        <ul class="contactList">
-                            <li><i class="em em-email"></i> &nbsp; &nbsp;&nbsp;&nbsp; <a href="mailto:stibilj.nejc@hotmail.com?Subject=Hi%20Nejc!" target="_top">STIBILJ.NEJC@HOTMAIL.COM</a> </li>
-                            <li><i class="em em-phone"></i> &nbsp; &nbsp;&nbsp;<a href="tel:+38641586585">+386 41-586-585</a></li>
-                            <li>
-                                <i class="em em-cat"></i>
-                                &nbsp; &nbsp;&nbsp;<a href="https://github.com/Hnnx">HNNX @ GITHUB</a>
-                            </li>
-                            <li>
-                                <i class="em em-blue_book"></i>
-                                &nbsp; &nbsp;&nbsp;<a href="https://edabit.com/user/csRRdiRcj5TjbS8M3">HNNX @ Edabit</a>
-                            </li>
-
-                        </ul>
-                        <br />
-                        <br />
-
-                    </p>
-
-                </div>
-                <div class="links">
-                    <a href="#skills"><p>Skills</p></a>
-                    <a href="#contact"><p>Contact</p></a>
-                    <a href="#projects"><p>Projects</p></a>
-                </div>
-            </div>
-            <br />
-            <footer id="remove">
-                <p>
-                    made by NS, all scripts/code written by hand except where noted otherwise <button class="footerOk">OK</button>
-                </p>
-            </footer>
-
+  <div id="center">
+    <nav id="navMain">
+      <a href="../hnnx.github.io/index.html"><img class="EN_SI" src="https://user-images.githubusercontent.com/9198025/63595659-c66a7d00-c5b9-11e9-87f6-f1a476474835.png" /></a>
+      <a href="../hnnx.github.io/indexSI.html"><img class="EN_SI" src="https://user-images.githubusercontent.com/9198025/63595658-c66a7d00-c5b9-11e9-8633-4356317991bc.png" /></a>
+      <div id="bgNav">
+        <img id="avatar" src="https://user-images.githubusercontent.com/9198025/66228669-4ff48b00-e6e0-11e9-8f4a-f80f320a76b1.jpg" height="200" width="200" alt="avatar" />
+      </div>
+    </nav>
+    <header class="plakat">
+      <h1 class="focus-in-expand">PC web den<span id="dot">.</span></h1>
+    </header>
+    <div class="vertibox">
+      <div class="tagNamesSkills">
+        <p id="skills" class="skillbox"><span class="tracking-in-expand">SPRETNOSTI</span></p>
+      </div>
+      <div class="boxtextHTML">
+        <p class="skilltag">HTML</p>
+        <div class="bgBar">
+          <div class="htmlBar"><p class="textProcentHTML">100%</p></div>
         </div>
-        <script src="script.js"></script>
-</body>
-</html>
+        <p class="skilltag">CSS</p>
+        <div class="bgBar">
+          <div class="cssBar"><p class="textProcentCSS">80%</p></div>
+        </div>
+        <p class="skilltag">C#</p>
+        <div class="bgBar">
+          <div class="csBar"><p class="textProcentCS">65%</p></div>
+        </div>
+        <p class="skilltag">JavaScript</p>
+        <div class="bgBar">
+          <div class="jsBar"><p class="textProcentJS">35%</p></div>
+        </div>
+        <p class="skilltag">Java</p>
+        <div class="bgBar">
+          <div class="javaBar"><p class="textProcentJava">55%</p></div>
+        </div>
+        <p class="skilltag">SQL</p>
+        <div class="bgBar">
+          <div class="sqlBar"><p class="textProcentSQL">90%</p></div>
+        </div>
+      </div>
+
+      <div class="tagNamesProjects">
+        <p id="#projects" class="skillbox"><span class="tracking-in-expand">PROJEKTI</span></p>
+      </div>
+      <div id="projectBox" class="boxtext">
+        <div>
+          <p class="projectText">
+            Moj trenutni projekt je tekstovni "RPG", spisan v Java in C# jeziku. <br />
+            Z uporabo programskih logik (zanke, polja/matrike, try/catch izjeme) urim in utrjujem osnove.<br /><br />
+            Moj običajen pristop:
+          </p>
+          <ul class="projectList">
+            <li>Pridobitev ideje in pretvorba v psevdokodo</li>
+            <li>Pisanje prvega osnutka v Javi</li>
+            <li>Razhroscevanje/Ciscanje kode</li>
+            <li>Prepis v C#</li>
+            <li>Beleženje razlik med jeziki</li>
+          </ul>
+          <p>Trenutno opravljam tečaj Nacionalne poklicne kvalifikacije, smer programer - izobraževanje bom zaključil Marca 2019.
+
+            <p>Prihodnji projekti:</p>
+            <ul class="projectList">
+              <li>
+                <li>Ponovitev tekstovnega RPG-ja z OOP principi</li>
+                <li>Postavljanje dinamičnih spletnih strani</li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="tagNamesAbout">
+            <p id="about" class="skillbox"><span class="tracking-in-expand">O MENI</span></p>
+          </div>
+          <div id="aboutBox" class="boxtext">
+            <div>
+              <p>
+                Sem <span class="greyed-out">Eclipse</span> navdušenec, ki je obtičal v <span class="greyed-out">.NET framework-u</span>, ker zadovolji moje front in back-end želje.<br>
+                Še vedno se težko ločim od <span class="greyed-out">Atom-a</span> za manjše in preprostejše HTML projekte.
+              </p>
+              <p>
+                Kodiranje me iz dneva v dan fascinira in navdušuje, vedno sem na preži za vzorci, algoritmi – opazujem jih tako ob zaslonu kot izven tega.
+                Privlači me nekonvencionalno – video igre, zlasti psihološki efekt na igralca, vloga razvijalca in celoten dizajn me navdušuje od svojih prvih
+                MS DOS naslovov in odkar sem prvič popihal na prašne Sega kartuše.
+              </p>
+
+              <p>
+                Če ne kodiram ali listam po referenčnih vodnikih, bom najverjetneje opažen ob svoji šlampasti vožnji  z motorjem.
+                Preostali čas posvešam urejanju video posnetkov v <span class="greyed-out">Sony Vegas</span>-u ali pa amaterski obdelavi slik v <span class="greyed-out">Adobe Photoshop-u</span>
+              </p>
+
+            </div>
+          </div>
+
+          <div class="tagNamesContact">
+
+            <p id="contact" class="skillbox"><span class="tracking-in-expand">KONTAKT</span></p>
+          </div>
+          <div id="contactBox" class="boxtext">
+
+            <p>
+              <ul class="contactList">
+                <li><i class="em em-email"></i> &nbsp; &nbsp;&nbsp;&nbsp; <a href="mailto:nejc.stibilj01@gmail.com?Subject=Hi%20Nejc!" target="_top">NEJC.STIBILJ01@GMAIL.COM</a> </li>
+                <li><i class="em em-phone"></i> &nbsp; &nbsp;&nbsp;<a href="tel:+38641586585">+386 41-586-585</a></li>
+                <li>
+                  <i class="em em-cat"></i>
+                  &nbsp; &nbsp;&nbsp;<a href="https://github.com/Hnnx">HNNX @ GITHUB</a>
+                </li>
+                <li>
+                  <i class="em em-blue_book"></i>
+                  &nbsp; &nbsp;&nbsp;<a href="https://edabit.com/user/csRRdiRcj5TjbS8M3">HNNX @ Edabit</a>
+                </li>
+
+              </ul>
+              <br />
+              <br />
+
+            </p>
+
+          </div>
+        </div>
+        <br />
+        <footer id="remove">
+          <p>
+            made by NS, all scripts/code written by hand except where noted otherwise <button class="footerOk">OK</button>
+          </p>
+        </footer>
+      </div>
+      <script src="script.js"></script>
+    </body>
+    </html>
