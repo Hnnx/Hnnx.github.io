@@ -11,15 +11,16 @@
 /* ::> Blocks <:: */
 
 .block p {
-    font-size: 2.7rem;
+    font-size: 2.7em;
     font-family: 'Bebas Neue', cursive;
-    margin-left: 50px;
-    vertical-align:middle;
+    line-height:100px;
+    margin-left:30%
 
 }
 
 .block {
     width: 30%;
+    min-width:300px;
     height: 100px;
     background-color: whitesmoke;
     transform: skewY(177deg) scale(1);
