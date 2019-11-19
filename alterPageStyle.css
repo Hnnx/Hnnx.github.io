@@ -16,6 +16,7 @@
     line-height:100px;
     margin-left:30%
 
+
 }
 
 .block {
@@ -35,3 +36,70 @@
         -webkit-transform: skewY(177deg) scale(1.1) translate(10px);
     }
 
+
+#leftSide {
+    width: 30%;
+    background-color: palevioletred;
+    min-width:320px;
+}
+
+
+#rightSide {
+    background-color: blue;
+    width: 70%;    
+}
+
+
+
+main{
+    display:flex;
+    background-color:greenyellow;
+}
+
+#avatar {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: rotatingGlow 4500ms ease-in-out;
+    animation-delay: 3s;
+}
+
+
+#contentBox{
+    margin: 20px;
+    height:90%;
+    
+    background-color:#fff;
+}
+
+@keyframes rotatingGlow {
+    0% {
+        transform: rotate(0deg);
+        -webkit-box-shadow: 0px 0px 42px 10px rgba(238,255,0,0);
+        -moz-box-shadow: 0px 0px 42px 10px rgba(238,255,0,0);
+        box-shadow: 0px 0px 42px 10px rgba(238,255,0,0);
+    }
+
+    79% {
+        -webkit-box-shadow: 0px 0px 42px 10px rgba(238,255,0,0);
+        -moz-box-shadow: 0px 0px 42px 10px rgba(238,255,0,0);
+        box-shadow: 0px 0px 42px 10px rgba(238,255,0,0);
+    }
+
+    89% {
+        -webkit-box-shadow: 0px 0px 159px -14px rgb(255,123,0);
+        -moz-box-shadow: 0px 0px 159px -14px rgb(255,123,0);
+        box-shadow: 0px 0px 159px -14px rgb(255,123,0);
+    }
+
+
+
+
+    100% {
+        transform: rotate(360deg);
+        -webkit-box-shadow: 0px 0px 42px 10px rgba(238,255,0,0);
+        -moz-box-shadow: 0px 0px 42px 10px rgba(238,255,0,0);
+        box-shadow: 0px 0px 42px 10px rgba(238,255,0,0);
+    }
+}
