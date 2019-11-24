@@ -39,21 +39,28 @@
 
 #leftSide {
     width: 30%;
-    background-color: palevioletred;
     min-width:320px;
+}
+
+#title{
+    border: solid black 2px;
+    width:50%;
+    margin:auto;
 }
 
 
 #rightSide {
-    background-color: blue;
-    width: 70%;    
+    width: 70%;
 }
 
+header{
+    background-color:red;
+    height:200px;
+}
 
 
 main{
     display:flex;
-    background-color:greenyellow;
 }
 
 #avatar {
