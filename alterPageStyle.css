@@ -39,21 +39,18 @@
 
 #leftSide {
     width: 30%;
-    background-color: palevioletred;
     min-width:320px;
 }
 
 
 #rightSide {
-    background-color: blue;
     width: 70%;    
 }
 
 
 
 main{
-    display:flex;
-    background-color:greenyellow;
+    display:flex;    
 }
 
 #avatar {
