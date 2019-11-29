@@ -25,7 +25,7 @@
             $(".tagNamesProjects").click(function () {
                 $("#projectBox").slideToggle(600);
 
-            }).click();
+            })
         });
 
         $(document).ready(function () {
@@ -53,8 +53,21 @@
         })
     </script>
 
+    <!-- Change BG -->
+
+    <script>
+        $(document).ready(function () {
+            $("#avatar").click(function () {
+                $("body").toggleClass("toggleBG");
+            })
+        });
+        
+
+
+    </script>
+
 </head>
-<body>
+<body class="mainBG">
     <div id="center">
         <nav id="navMain">
           <a href="../hnnx.github.io/index.html"><img class="EN_SI" src="https://user-images.githubusercontent.com/9198025/63595659-c66a7d00-c5b9-11e9-87f6-f1a476474835.png" /></a>
@@ -63,8 +76,12 @@
               <img id="avatar" src="https://user-images.githubusercontent.com/9198025/66228669-4ff48b00-e6e0-11e9-8f4a-f80f320a76b1.jpg" height="200" width="200" alt="avatar" />
             </div>
         </nav>
-        <header class="plakat">
+        <header class="plakat">            
             <h1 class="focus-in-expand">PC web den<span id="dot">.</span></h1>
+            <h5 class="focus-in-expand">[ Now with theme picker! ]</h5><br />
+            <div id="colorPicker">
+                <div id="a">a</div> <div id="b">b</div> <div id="c">c</div>
+            </div>
         </header>
         <div class="vertibox">
             <div class="tagNamesSkills">

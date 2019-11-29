@@ -6,10 +6,59 @@
 }
 
 body {
-    font-family: 'Michroma', sans-serif;
-    background:white;
-    background-color: rgba(255,123,0,.15);
+    font-family: 'Michroma', sans-serif;    
 }
+
+.mainBG {
+    background-color:white;
+}
+
+.toggleBG {
+    background-color: rgba(255,214,175,1);
+}
+
+#colorPicker {
+    width: 200px;
+    margin: auto;
+    display: flex;
+    
+}
+
+#a {
+    border-radius: 50%;
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255,214,175,1)
+}
+#b {
+    border-radius: 50%;
+    margin: auto;
+    background-color: aliceblue;
+    margin: auto;
+    width: 35px;
+    height: 35px;
+}
+#c {
+    border-radius: 50%;
+    margin: auto;    
+    background-color: rgba(255,214,175,1);
+    width: 35px;
+    height: 35px;
+}
+
+#a:hover{
+    transform:scale(1.1);
+}
+#b:hover{
+    transform:scale(1.1);
+}
+
+#c:hover{
+    transform:scale(1.1);
+}
+
+
 
 #center {
     margin: auto;
