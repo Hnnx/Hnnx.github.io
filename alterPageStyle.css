@@ -42,15 +42,25 @@
     min-width:320px;
 }
 
-
-#rightSide {
-    width: 70%;    
+#title{
+    border: solid black 2px;
+    width:50%;
+    margin:auto;
 }
 
 
+#rightSide {
+    width: 70%;
+}
+
+header{
+    background-color:red;
+    height:200px;
+}
+
 
 main{
-    display:flex;    
+    display:flex;
 }
 
 #avatar {
