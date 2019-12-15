@@ -1,16 +1,42 @@
-*{
-    padding:0px;
-    margin:0px;
-    list-style:none;
+@import url('https://fonts.googleapis.com/css?family=Gaegu&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    color: white;
+    font-family: 'Gaegu', cursive;
+}
+
+body{
+    background-color:#005234;
 }
 
 main{
     width:50%;
-    margin:auto;
-    background-color:#bdf3ff;
+    margin:auto;    
 
 }
 
-p{
-    
+p {    
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 20px;
+    text-align: center;
+}
+
+.drawingBoard{
+    border: solid white 5px;
+    border-radius: 4px;
+    width:70%;
+    margin:auto;    
+    height: 500px;
+}
+
+#resultBoard {
+    border: solid white 5px;
+    border-radius: 4px;
+    width: 70%;
+    margin: auto;
+    height: 200px;
 }
