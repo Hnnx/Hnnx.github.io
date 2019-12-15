@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu&display=swap');
+
 *{
     padding:0px;
     margin:0px;
     list-style:none;
 }
+body{
+    background-color:#005234;
+}
 
 main{
     width:50%;
-    margin:auto;
-    background-color:#bdf3ff;
+    margin:auto;    
 
 }
 
-p{
-    
+p {    
+    color:white;
+    font-family: 'Gaegu', cursive;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 20px;
+    text-align: center;
 }
