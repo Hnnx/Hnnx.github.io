@@ -14,7 +14,7 @@ body{
 
 main{
     width:50%;
-    margin:auto;    
+    margin: 0 auto;    
 
 }
 
@@ -23,7 +23,7 @@ main{
     color: black;
     font-size: 3rem;    
     width:50%;
-    margin:auto;
+    margin: 0 auto;
 }
 
 .radio{
@@ -47,7 +47,7 @@ p {
     border: solid white 5px;
     border-radius: 4px;
     width:70%;
-    margin:auto;    
+    margin:0 auto;    
     height: 500px;
 }
 
@@ -55,6 +55,6 @@ p {
     border: solid white 5px;
     border-radius: 4px;
     width: 70%;
-    margin: auto;
+    margin: 0  auto;
     height: 200px;
 }
