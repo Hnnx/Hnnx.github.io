@@ -18,6 +18,24 @@ main{
 
 }
 
+.input > input {
+    display:block;
+    color: black;
+    font-size: 3rem;    
+    width:50%;
+    margin:auto;
+}
+
+.radio{
+    font-size:2.5rem;
+}
+
+.el{
+    margin-left:20px;
+    width:1.5em;
+    height:1.5em;
+}
+
 p {    
     font-size: 2rem;
     font-weight: 100;
@@ -25,7 +43,7 @@ p {
     text-align: center;
 }
 
-.drawingBoard{
+.drawingBoard{    
     border: solid white 5px;
     border-radius: 4px;
     width:70%;

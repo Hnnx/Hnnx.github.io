@@ -7,5 +7,5 @@ let getRDM = () => {
     result.innerHTML = Math.floor((Math.random() * 9 + 1));
 }
 
+setInterval(getRDM, 700);
 
-setInterval(getRDM, 500);
