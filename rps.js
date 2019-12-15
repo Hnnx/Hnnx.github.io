@@ -8,4 +8,5 @@ let getRDM = () => {
 }
 
 
-setInterval(getRDM, 500);
+
+
