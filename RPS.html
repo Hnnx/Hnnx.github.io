@@ -11,14 +11,23 @@
     </main>
     <article class="drawingBoard">
         <p>Choice</p>
-        <input type="text" />
+        <form class="input">
+            <input type="text" /><br />
+        </form>
+        <form class="radio">
+            <input type="radio" name="rps" class="el"> ROCK
+            <br />
+            <input type="radio" name="rps" class="el"> PAPER
+            <br />
+            <input type="radio" name="rps" class="el"> SKERJE
+            <br />
+        </form>
         
-
     </article>
     <br />
     <div id="resultBoard">
         <p>Izpisi random num med 1 in 10, interval pol sekunde</p>
-        <p id="result">innerHTML.result</p>
+        <p id="result"></p>
     </div>
 
 
