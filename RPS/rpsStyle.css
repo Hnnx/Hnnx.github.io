@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    color: white;
+    font-family: 'Gaegu', cursive;
+}
+
+body {
+    background-color: #005234;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+}
+
+.drawingBoard {
+    border: ridge #a86335 15px;      
+    width:80%;
+    margin: auto;
+}
+
+.inputBoxes {    
+    width: 50%;
+    margin: auto;
+}
+
+input[type=text] {
+    display: block;
+    color: black;
+    font-size: 1.5rem;
+    width: 15%;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+}
+    input[type=text]:focus {
+        transition: ease-in 500ms;
+        width: 30%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+#buttonContainer{     
+    width:500px;
+    margin: 0 auto;    
+}
+
+button {
+    color: black;
+    transform: scale(1.5);
+    margin-left:200px;
+}
+
+
+#zamik{    
+    width:180px;    
+    text-align:justify;        
+}
+#picContainer {
+    display: flex;
+    margin: auto;
+    width: 250px;
+    height: 150px;
+}
+
+#pcPick {
+    margin: auto;
+    width: 100px;
+}
+
+#userPick {
+    margin: auto;
+    width: 100px;
+}
+
+#rock {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+    #rock:hover {
+        transform: scale(1.07);
+        animation: shadowLift forwards 250ms;
+    }
+
+#skerje {
+    border-radius: 50%;
+    width: 100px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+    #skerje:hover {
+        transform: scale(1.07);
+        animation: shadowLift forwards 250ms;
+    }
+
+.radio {
+    font-size: 2.5rem;
+    width:50%;
+    margin: 0 auto;
+}
+
+.el {
+    margin-left: 20px;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes shadowLift {
+
+    0% {
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    100% {
+        box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+}

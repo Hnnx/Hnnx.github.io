@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>rps jS attempt</title>
+    <link rel="stylesheet" href="rpsStyle.css" />
+</head>
+<body>
+    <main>
+        <p>Quick JS practice</p>
+        <p>like every noob I've decided to put together a simple rock paper scissor game written in javascript</p>
+    </main>
+    <article class="drawingBoard">
+        <div class="inputBoxes">
+            <p>1) Text input Choice</p>
+            <form class="input">
+                <input type="text" placeholder="" /><br />
+            </form>
+        </div>
+        <div class="inputBoxes">
+            <p>2) Radio input Choice</p>
+            <form class="radio" id="zamik">
+                <input type="radio" name="rps" class="el" value="r"> ROCK
+                <br />
+                <input type="radio" name="rps" class="el" value="p"> PAPER
+                <br />
+                <input type="radio" name="rps" class="el" value="s"> SKERJE
+                <br />
+            </form>
+        </div>
+        <div class="inputBoxes">
+            <p>3) button/image input Choice</p>
+            <div id="picContainer">
+                <div id="pcPick">
+                    <img id="rock" alt="rock" src="https://i.imgur.com/EI7xHfA.png" />
+                </div>
+                <div id="userPick">
+                    <img id="skerje" alt="skerje" src="https://i.imgur.com/NxJbTe7.png" />
+                </div>
+            </div>
+        </div>
+        <div class="inputBoxes">
+            <div id="buttonContainer">
+                <button onclick="getRDM(5)">Random</button>
+                <p id="placeholder"></p>
+                <button onclick="autoRDM(5)">Auto</button>
+                <p id="placeholder"></p>
+            </div>
+        </div>
+
+    </article>
+    <br />
+    <div id="resultBoard">
+        <p>Izpisi random num med 1 in 10, interval pol sekunde</p>
+        <p id="result"></p>
+    </div>
+
+
+
+    <script src="rps.js"></script>
+</body>
+</html>
