@@ -47,6 +47,17 @@ input[type=text] {
         text-overflow: ellipsis;
     }
 
+#buttonContainer{     
+    width:500px;
+    margin: 0 auto;    
+}
+
+button {
+    color: black;
+    transform: scale(1.5);
+    margin-left:200px;
+}
+
 
 #zamik{    
     width:180px;    
