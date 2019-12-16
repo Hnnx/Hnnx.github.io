@@ -8,66 +8,119 @@
     font-family: 'Gaegu', cursive;
 }
 
-body{
-    background-color:#005234;
+body {
+    background-color: #005234;
 }
 
-main{
-    width:50%;
-    margin: auto;    
-}
-
-.input > input {
-    display:block;
-    color: black;
-    font-size: 3rem;    
-    width:50%;
+main {
+    width: 50%;
     margin: auto;
 }
 
-#picContainer {   
-    display:flex;
-    background-color: green;
+.drawingBoard {
+    border: ridge #a86335 15px;      
+    width:80%;
+    margin: auto;
+}
+
+.inputBoxes {    
+    width: 50%;
+    margin: auto;
+}
+
+input[type=text] {
+    display: block;
+    color: black;
+    font-size: 1.5rem;
+    width: 15%;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+}
+    input[type=text]:focus {
+        transition: ease-in 500ms;
+        width: 30%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+#zamik{    
+    width:180px;    
+    text-align:justify;        
+}
+#picContainer {
+    display: flex;
     margin: auto;
     width: 250px;
     height: 150px;
 }
+
 #pcPick {
-    background-color: aliceblue;
     margin: auto;
-    width: 50px;
-    height: 50px;
+    width: 100px;
 }
 
 #userPick {
-    background-color: red;
     margin: auto;
-    width: 50px;
-    height: 50px;
+    width: 100px;
 }
 
-.radio{
-    font-size:2.5rem;
+#rock {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
-.el{
-    margin-left:20px;
-    width:1.5em;
-    height:1.5em;
+    #rock:hover {
+        transform: scale(1.07);
+        animation: shadowLift forwards 250ms;
+    }
 
+#skerje {
+    border-radius: 50%;
+    width: 100px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
-p {    
+    #skerje:hover {
+        transform: scale(1.07);
+        animation: shadowLift forwards 250ms;
+    }
+
+.radio {
+    font-size: 2.5rem;
+    width:50%;
+    margin: 0 auto;
+}
+
+.el {
+    margin-left: 20px;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+p {
     font-size: 2rem;
     font-weight: 100;
     padding: 20px;
     text-align: center;
 }
 
-.drawingBoard {
-    border: ridge #a86335  15px;    
-    border-radius: 4px;    
-    width: 70%;
-    margin: auto;
-    height: 500px;
+
+
+/* ANIMATIONS */
+
+@keyframes shadowLift {
+
+    0% {
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    100% {
+        box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.75);
+    }
 }
