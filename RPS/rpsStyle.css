@@ -14,8 +14,7 @@ body{
 
 main{
     width:50%;
-    margin: 0 auto;    
-
+    margin: auto;    
 }
 
 .input > input {
@@ -23,7 +22,28 @@ main{
     color: black;
     font-size: 3rem;    
     width:50%;
-    margin: 0 auto;
+    margin: auto;
+}
+
+#picContainer {   
+    display:flex;
+    background-color: green;
+    margin: auto;
+    width: 250px;
+    height: 150px;
+}
+#pcPick {
+    background-color: aliceblue;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+#userPick {
+    background-color: red;
+    margin: auto;
+    width: 50px;
+    height: 50px;
 }
 
 .radio{
@@ -34,6 +54,7 @@ main{
     margin-left:20px;
     width:1.5em;
     height:1.5em;
+
 }
 
 p {    
@@ -43,18 +64,10 @@ p {
     text-align: center;
 }
 
-.drawingBoard{    
-    border: solid white 5px;
-    border-radius: 4px;
-    width:70%;
-    margin:0 auto;    
-    height: 500px;
-}
-
-#resultBoard {
-    border: solid white 5px;
-    border-radius: 4px;
+.drawingBoard {
+    border: ridge #a86335  15px;    
+    border-radius: 4px;    
     width: 70%;
-    margin: 0  auto;
-    height: 200px;
+    margin: auto;
+    height: 500px;
 }
