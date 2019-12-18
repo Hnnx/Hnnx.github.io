@@ -1,29 +1,52 @@
-let result = document.getElementById("result");
+//Random num on click
 
-let rdm = top => {
-    result.innerHTML = Math.floor((Math.random() * top + 1));
+
+let myElement = document.getElementById("placeholder");
+
+const getRDM = top => {   
+    return Math.floor(Math.random() * top + 1);
+}
+
+const newRDM = () => {    
+    console.log(Math.floor(Math.random() * 5 + 1))
 }
 
 
-let clickRandom = document.getElementById("placeholder");
+let myButton = document.getElementById("rdmButton");
 
-function getRDM(top) {
+myButton.addEventListener("click", newRDM);
 
-    clickRandom.innerHTML = "Your random number is: " + Math.floor(Math.random() * top + 1);
+
+
+
+
+
+
+
+//prompt function
+const getName = () => {
+
+    let userName = prompt("ins name:");
+    let defName = userName || "NoName";
+
+    document.getElementById("name").innerHTML = "Hello " + defName + "!";
 }
 
-let autoRandom = document.getElementById("autoPlaceholder");
+let buttonName = document.getElementById("listen");
+buttonName.addEventListener("click", getName);
 
 
-function autoRDM(top) {
-    autoRandom.innerHTML = "yr rdm is: " + Math.floor((Math.random() * top + 1));    
-}
 
-function rr() {
-    let x = Math.floor((Math.random() * 20 + 1));
-}
 
-setInterval(rr, 200);
+
+
+
+
+
+
+
+
+
 
 
 

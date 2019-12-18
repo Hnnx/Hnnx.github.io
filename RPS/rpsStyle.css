@@ -4,12 +4,52 @@
     padding: 0px;
     margin: 0px;
     list-style: none;
-    color: white;
     font-family: 'Gaegu', cursive;
 }
 
 body {
+    color: white;
+}
+
+
+body {
     background-color: #005234;
+}
+
+#listen {
+    padding: 2px 5px 2px 5px;
+    display: block;
+    margin: auto;
+}
+
+#name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+
+
+    #name::before {
+        content: "> "
+    }
+
+    #name::after {
+        content: " <"
+    }
+
+
+.buttons {
+    display: grid;
+    width: 30%;
+    margin: 0 auto;
+    max-width: 600px;
+    word-wrap: hyphenate;
+}
+
+.btn {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 10px;
 }
 
 main {
@@ -18,12 +58,12 @@ main {
 }
 
 .drawingBoard {
-    border: ridge #a86335 15px;      
-    width:80%;
+    border: ridge #a86335 15px;
+    width: 80%;
     margin: auto;
 }
 
-.inputBoxes {    
+.inputBoxes {
     width: 50%;
     margin: auto;
 }
@@ -39,6 +79,7 @@ input[type=text] {
     text-overflow: ellipsis;
     text-transform: capitalize;
 }
+
     input[type=text]:focus {
         transition: ease-in 500ms;
         width: 30%;
@@ -47,22 +88,23 @@ input[type=text] {
         text-overflow: ellipsis;
     }
 
-#buttonContainer{     
-    width:500px;
-    margin: 0 auto;    
+#buttonContainer {
+    width: 500px;
+    margin: 0 auto;
 }
 
-button {
+#rdmButton {
     color: black;
     transform: scale(1.5);
-    margin-left:200px;
+    margin-left: 200px;
 }
 
 
-#zamik{    
-    width:180px;    
-    text-align:justify;        
+#zamik {
+    width: 180px;
+    text-align: justify;
 }
+
 #picContainer {
     display: flex;
     margin: auto;
@@ -104,7 +146,7 @@ button {
 
 .radio {
     font-size: 2.5rem;
-    width:50%;
+    width: 50%;
     margin: 0 auto;
 }
 
