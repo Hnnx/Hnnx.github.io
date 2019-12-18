@@ -11,6 +11,17 @@
     </main>
     <article class="drawingBoard">
         <div class="inputBoxes">
+            <button id="listen">Insert Name</button>
+            <p id="name"></p>
+        </div>
+        <div class="inputBoxes">
+            <div class="buttons">
+                <button class="btn" id="r">Rock</button>
+                <button class="btn" id="p">Paper</button>
+                <button class="btn" id="s">Skerje</button>
+            </div>
+        </div>
+        <div class="inputBoxes">
             <p>1) Text input Choice</p>
             <form class="input">
                 <input type="text" placeholder="" /><br />
@@ -40,22 +51,13 @@
         </div>
         <div class="inputBoxes">
             <div id="buttonContainer">
-                <button onclick="getRDM(5)">Random</button>
-                <p id="placeholder"></p>
-                <button onclick="autoRDM(5)">Auto</button>
+                <button id="rdmButton">Random</button>
                 <p id="placeholder"></p>
             </div>
         </div>
 
     </article>
     <br />
-    <div id="resultBoard">
-        <p>Izpisi random num med 1 in 10, interval pol sekunde</p>
-        <p id="result"></p>
-    </div>
-
-
-
     <script src="rps.js"></script>
 </body>
 </html>
