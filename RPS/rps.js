@@ -1,6 +1,4 @@
 //Random num on click
-
-
 let myElement = document.getElementById("placeholder");
 
 const getRDM = top => {   
@@ -15,12 +13,6 @@ const newRDM = () => {
 let myButton = document.getElementById("rdmButton");
 
 myButton.addEventListener("click", newRDM);
-
-
-
-
-
-
 
 
 //prompt function
