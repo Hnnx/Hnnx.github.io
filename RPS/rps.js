@@ -26,22 +26,3 @@ const getName = () => {
 
 let buttonName = document.getElementById("listen");
 buttonName.addEventListener("click", getName);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//REWORK RANDOM
