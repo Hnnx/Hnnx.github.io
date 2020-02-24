@@ -18,8 +18,8 @@ myButton.addEventListener("click", newRDM);
 //prompt function
 const getName = () => {
 
-    let userName = prompt("ins name:");
-    let defName = userName || "NoName";
+    let userName = prompt("Insert name::");
+    let defName = userName || "user";
 
     document.getElementById("name").innerHTML = "Hello " + defName + "!";
 }

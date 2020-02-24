@@ -9,10 +9,6 @@
 
 body {
     color: white;
-}
-
-
-body {
     background-color: #005234;
 }
 
@@ -130,7 +126,6 @@ input[type=text] {
 
     #rock:hover {
         transform: scale(1.07);
-        animation: shadowLift forwards 250ms;
     }
 
 #skerje {
@@ -141,7 +136,6 @@ input[type=text] {
 
     #skerje:hover {
         transform: scale(1.07);
-        animation: shadowLift forwards 250ms;
     }
 
 .radio {
