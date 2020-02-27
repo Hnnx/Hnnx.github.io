@@ -25,7 +25,7 @@
             $(".tagNamesProjects").click(function () {
                 $("#projectBox").slideToggle(600);
 
-            })
+            }).click();
         });
 
         $(document).ready(function () {
@@ -39,7 +39,7 @@
             $(".tagNamesContact").click(function () {
                 $("#contactBox").slideToggle(600);
 
-            }).click();
+            })
         });
 
     </script>
@@ -78,6 +78,15 @@
                 $(".tracking-in-expand").css("font-weight", "500");
                 $("h1").css("color", "black");
                 $("h5").css("color", "black");
+
+
+                $("#avatar").css("filter", "grayscale(0%)");
+
+
+                $("p.projectText").css({ "color": "black", "font-weight": "700" });
+                $(".projectList").css({ "color": "black", "font-weight": "700" });
+                $(".contactList a").css({ "color": "black", "font-weight": "700" });
+                $(".greyed-out").css("color", "rgba(255,123,0,.5)");
 
 
             })
@@ -130,54 +139,19 @@
                 $("h1").css("color", "white");
                 $("h5").css("color", "white");
 
+                $("#avatar").css("filter", "grayscale(100%)");
+
 
                 $("p.projectText").css({ "color": "white", "font-weight": "300" });
                 $(".projectList").css({ "color": "white", "font-weight": "300" });
                 $(".contactList a").css({ "color": "white", "font-weight": "300" });
                 $(".greyed-out").css("color", "rgba(255,123,0,.5)");
 
+
+
+
             })
         });
-
-
-        //>>    Change pic on theme click
-
-        //Coffee
-        $(document).ready(function () {
-
-            $("#coffee").on({
-                "click": function () {
-                    $("#avatar").attr("src", "https://user-images.githubusercontent.com/9198025/66228669-4ff48b00-e6e0-11e9-8f4a-f80f320a76b1.jpg");
-                }
-            })
-
-        });
-
-        //White
-        $(document).ready(function () {
-
-            $("#white").on({
-                "click": function () {
-                    $("#avatar").attr("src", "https://user-images.githubusercontent.com/9198025/66228669-4ff48b00-e6e0-11e9-8f4a-f80f320a76b1.jpg");
-                }
-            })
-
-        });
-
-
-
-
-        //Dark
-        $(document).ready(function () {
-
-            $("#dark").on({
-                "click": function () {
-                    $("#avatar").attr("src", "https://user-images.githubusercontent.com/9198025/75486413-c2764800-59ac-11ea-812b-5d6d460600e8.png");
-                }
-            })
-
-        });
-
 
     </script>
 
@@ -234,34 +208,43 @@
             </div>
             <div id="projectBox" class="boxtext">
                 <div>
-                    <p class="projectText">
-                        Currently working on a text/shell based <span class="greyed-out">RPG</span> written in
-                        <a href="https://github.com/Hnnx/Dumbgeon-Java-0.8" id="link">Java</a> and
-                        <a href="https://github.com/Hnnx/Dumbgeon-C-0.7-" id="link2">C#.</a><br /><br />
-                        Most of my codes are available on <a href="https://github.com/Hnnx">GitHub</a> and include smaller code bits, various excercises and
-                        other random oddities such as this <a href="https://onlinegdb.com/HJRm1gR-L">List thingy with nifty functionality</a><br /><br />
-
-                        <small>also I'm developing a complete overhaul of this website with flex-box in mind <i class="em em-chipmunk" aria-role="presentation" aria-label=""></i> </small>
-
-                        <br /><br />
-
-                        My usual approach :
+                    <ul class="projectList">
+                        <li> <a href="https://github.com/Hnnx/AngleskiGlagoli">Learning English Verbs</a> <span class="itSmall">in progress</span></li>
+                    </ul>
+                    <p class="description">
+                        Part of my National Vocational Qualification - A Java application where end users can personalize exams for students.<br />
+                        Application includes a simple login system and an administrator interface where one can tailor the experience for specific students.<br />
+                        It connects and interacts with SQLite databse, has basic GUI elements and is highly customizable - administator can pick vers, verb forms and
+                        personalize them based on student needs.
                     </p>
-                    <ul class="projectList">
-                        <li>Get ideas and turn them into pseudocode</li>
-                        <li>Write first draft in Java</li>
-                        <li>Polish the code</li>
-                        <li>Re-write in C#</li>
-                        <li>Note the syntax/performance difference</li>
-                    </ul>
-                    <p class="projectText">I'm currently enrolled in a programming National Vocational Qualification and should be done with it by March 2019</p>
 
-                    <p class="projectText">Upcoming projects :</p>
                     <ul class="projectList">
-                        <li>Redo the shell game with OOP principles</li>
-                        <li>Set up dynamic websites</li>
+                        <li> <a href="https://github.com/Hnnx/TwistRoad">TwistRoad</a> <span class="itSmall">in progress</span></li>
                     </ul>
+                    <p class="description">
+                        TwistRoad is another Java application that I've started working on along with the Learning English Verbs that allows users to vote and bookmark their favorite motorcycle routes <br />
+                        The database will include motorcycle friendly routes, will categorise them by intensity and location.<br />
+                        Currently in the GUI-phase, it will connect to SQLite database, will include images and a voting system. More info will be added as roadmap becomes clearer.
+                    </p>
 
+                    <ul class="projectList">
+                        <li> <a href="https://github.com/Hnnx/DumbgeonJava09">Dumbgeon</a></li>
+                    </ul>
+                    <p class="description">
+                        I've made this shell based RPG when I put my first tiny Java shoes on - it served as a motivational piece that added dry humor to basic Java funtionality.<br />
+                        It includes programming fundamentals such as various loops, arrays, methods and combining the three together. <br />
+                        Barely scrateces the Object Oriented design, but I'm sure the code would be wildly different if I re-did it today :)<br />
+                        Also worth noting is that I've re-written the game in C# to get familiar with the syntax and Visual Studio IDE<br />
+                    </p>
+
+                    <ul class="projectList">
+                        <li> <a href="https://github.com/Hnnx/NPK-Programer">Homeworks</a></li>
+                    </ul>
+                    <p class="description">
+                        All the homeworks that I've done as part of my National Vocational Qualification.
+                    </p>
+
+                    <p class="subtext">also I'm developing a complete overhaul of this website with flex-box in mind <i class="em em-chipmunk" aria-role="presentation" aria-label=""></i> </p>
                 </div>
             </div>
             <div class="tagNamesAbout">
@@ -270,13 +253,14 @@
             <div id="aboutBox" class="boxtext">
                 <div>
                     <p class="projectText">
-                        An avid <span class="greyed-out">Eclipse</span> user, lately stuck in <span class="greyed-out">.NET framework</span> because it scratches both my front and back end itch.<br /><br />
+                        I'm currently enrolled in a programming National Vocational Qualification and should be done with it by April 2020<br />
+                        An avid <span class="greyed-out">Eclipse</span> user, lately stuck in <span class="greyed-out">Visual Studio</span> where I deal mostly with web development and re-writing my Java code in C#<br /><br />
                         Still clinging on to <span class="greyed-out">Atom</span> for small and simple HTML projects.<br /><br />
                     </p>
                     <p class="projectText">
-                        Coding fascinates and inspires me through daily life, I'm always on the lookout for patterns, algorithms, I see code in nearly every aspect of my life - both on and off screen.
-                        I'm passionate and attracted by the unconventional - video games, particularly the psychological effect on the player, developer's role and overall design interested me
-                        since I first fired up my first <span class="greyed-out">MS DOS</span> titles and blew onto dusty <span class="greyed-out">Sega</span> cartridges.<br /><br />
+                        Coding fascinates and inspires me through daily life, I'm always on the lookout for patterns, algorithms, I see code in nearly every aspect of my life - both on and off screen.<br />
+                        I'm passionate and attracted by the unconventional - if it's weird I'm interested. Video games, particularly the developer's role and overall design interested me. Sometimes a bit too much so feel free
+                        to stop me if I'm talking too much.<br />                        
                     </p>
 
                     <p class="projectText">
