@@ -17,7 +17,7 @@
                 $(".boxtextHTML").slideToggle(600);
 
 
-            })
+            }).click();
         }
         );
 
@@ -53,41 +53,54 @@
         })
     </script>
 
-    <!-- Change BG -->
+    <!-- Theme Picker -->
 
     <script>
 
+
+        //COFFEE
         $(document).ready(function () {
 
-            $("#a").click(function () {
+            $("#coffee").click(function () {
                 $("body").removeClass();
-                $("body").addClass("toggleA");
+                $("body").addClass("toggleCoffee");
 
-                
-                $(".skillbox").addClass("skillBoxBlue");
+
+                $(".skillbox").removeClass("skillboxBlue skillboxDark").addClass("skillboxCoffee");
+
+                $(".bgBar").removeClass("bgBarWhite").addClass("bgBarBlack");
+
             })
 
         });
-        
 
+
+        //WHITE-ISH
         $(document).ready(function () {
-            $("#b").click(function () {
+            $("#white").click(function () {
                 $("body").removeClass();
-                $("body").addClass("toggleB");
+                $("body").addClass("toggleWhite");   
+                                
+                $(".skillbox").removeClass("skillboxDark skillboxCoffee").addClass("skillboxBlue");
+
+                $(".bgBar").removeClass("bgBarWhite").addClass("bgBarBlack");
 
 
-                $(".skillbox").addClass("skillBoxRed");
             })
         });
 
-        $(document).ready(function () {
-            $("#c").click(function () {
-                $("body").removeClass();
-                $("body").addClass("toggleC");
 
-                $(".skillbox").addClass("skillBoxGreen");
-                
-                
+
+        //666 MODE
+        $(document).ready(function () {
+            $("#dark").click(function () {
+                $("body").removeClass();
+                $("body").addClass("toggleDark");
+
+                $(".skillbox").removeClass("skillboxCoffee skillboxBlue").addClass("skillboxDark");
+
+                $(".bgBar").removeClass("bgBarBlack").addClass("bgBarWhite");
+
 
             })
         });
@@ -96,7 +109,7 @@
     </script>
 
 </head>
-<body class="toggleA">
+<body class="toggleDark">
     <div id="center">
         <nav id="navMain">
           <a href="../main/index.html"><img class="EN_SI" src="https://user-images.githubusercontent.com/9198025/63595659-c66a7d00-c5b9-11e9-87f6-f1a476474835.png" /></a>
@@ -109,7 +122,7 @@
             <h1 class="focus-in-expand">PC web den<span id="dot">.</span></h1>
             <h5 class="focus-in-expand">[ Now with theme picker! ]</h5><br />
             <div id="colorPicker">
-                <div id="a"></div> <div id="b"></div> <div id="c"></div>
+                <div id="coffee"></div> <div id="white"></div> <div id="dark"></div>
             </div>
         </header>
         <div class="vertibox">
@@ -144,7 +157,7 @@
             </div>
 
             <div class="tagNamesProjects">
-                <p id="#projects" class="skillbox"><span class="tracking-in-expand">PROJECTS</span></p>
+                <p id="projects" class="skillbox"><span class="tracking-in-expand">PROJECTS</span></p>
             </div>
             <div id="projectBox" class="boxtext">
                 <div>
