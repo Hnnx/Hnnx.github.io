@@ -17,7 +17,7 @@
                 $(".boxtextHTML").slideToggle(600);
 
 
-            })
+            }).click();
         }
         );
 
@@ -25,7 +25,7 @@
             $(".tagNamesProjects").click(function () {
                 $("#projectBox").slideToggle(600);
 
-            }).click();
+            })
         });
 
         $(document).ready(function () {
@@ -87,6 +87,9 @@
                 $(".projectList").css({ "color": "black", "font-weight": "700" });
                 $(".contactList a").css({ "color": "black", "font-weight": "700" });
                 $(".greyed-out").css("color", "rgba(255,123,0,.5)");
+                $(".description").css({ "color": "black", "font-weight": "700" });
+                $(".subtext").css({ "color": "black", "font-weight": "700" });
+                $(".projectList li a").css({ "color": "rgba(255,123,0,1)", "text-decoration": "none" });
 
 
             })
@@ -102,20 +105,34 @@
 
                 $(".skillbox").removeClass("skillboxDark skillboxCoffee").addClass("skillboxWhite");
 
-                $(".htmlBar").removeClass("htmlBarWhite htmlBarCoffee").addClass("htmlBarDark");
-                $(".cssBar").removeClass("cssBarWhite cssBarCoffee").addClass("cssBarDark");
-                $(".csBar").removeClass("csBarWhite csBarCoffee").addClass("csBarDark");
-                $(".jsBar").removeClass("jsBarWhite jsBarCoffee").addClass("jsBarDark");
-                $(".javaBar").removeClass("javaBarWhite javaBarCoffee").addClass("javaBarDark");
-                $(".sqlBar").removeClass("sqlBarWhite sqlBarCoffee").addClass("sqlBarDark");
+                $(".htmlBar").removeClass("htmlBarDark htmlBarCoffee").addClass("htmlBarWhite");
+                $(".cssBar").removeClass("cssBarDark cssBarCoffee").addClass("cssBarWhite");
+                $(".csBar").removeClass("csBarDark csBarCoffee").addClass("csBarWhite");
+                $(".jsBar").removeClass("jsBarDark jsBarCoffee").addClass("jsBarWhite");
+                $(".javaBar").removeClass("javaBarDark javaBarCoffee").addClass("javaBarWhite");
+                $(".sqlBar").removeClass("sqlBarDark sqlBarCoffee").addClass("sqlBarWhite");
                 $(".skilltag").css({ "color": "black", "font-weight": "500" });
                 $(".tracking-in-expand").css("font-weight", "500");
                 $("h1").css("color", "black");
                 $("h5").css("color", "black");
 
 
+                $("#avatar").css("filter", "grayscale(0%)");
 
-            })
+
+
+                $("p.projectText").css({ "color": "black", "font-weight": "700" });
+                $(".projectList").css({ "color": "black", "font-weight": "700" });
+                $(".contactList a").css({ "color": "black", "font-weight": "700" });
+                $(".greyed-out").css("color", "rgba(255,123,0,.5)");
+                $(".description").css({ "color": "black", "font-weight": "700" });
+                $(".subtext").css({ "color": "black", "font-weight": "700" });
+                $(".projectList li a").css({ "color": "#1184a4", "text-decoration": "none" });
+
+
+
+
+            }).click();
         });
 
 
@@ -145,7 +162,10 @@
                 $("p.projectText").css({ "color": "white", "font-weight": "300" });
                 $(".projectList").css({ "color": "white", "font-weight": "300" });
                 $(".contactList a").css({ "color": "white", "font-weight": "300" });
-                $(".greyed-out").css("color", "rgba(255,123,0,.5)");
+                $(".greyed-out").css({ "color": "white", "font-weight": "300" });
+                $(".description").css({ "color": "white", "font-weight": "300" });
+                $(".subtext").css({ "color": "white", "font-weight": "300" });
+                
 
 
 
