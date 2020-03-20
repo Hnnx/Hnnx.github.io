@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BS Training Grounds</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-3 text-center">BS Training Grounds</h1>
+    </div>
+
+
+    <!-- Rows/Spans -->
+    <div class="container">
+        <div class="row text-center img-thumbnail my-2">
+            <div class="col-sm-3 bg-primary text-white">col sm 3x4 divs</div>
+            <div class="col-sm-3 bg-warning text-dark">2nd div</div>
+            <div class="col-sm-3 bg-primary text-white">3rd div</div>
+            <div class="col-sm-3 bg-warning text-dark">4th div</div>
+        </div>
+        <div class="row text-center img-thumbnail my-2">
+            <div class="col-md-4 bg-warning text-dark">col md 3x3 divs</div>
+            <div class="col-md-4 bg-primary text-light">2nd div</div>
+            <div class="col-md-4 bg-warning text-dark">3rd div</div>
+        </div>
+        <div class="row text-center img-thumbnail my-2">
+            <div class="col-lg-6 bg-warning text-dark">col lg 6x2 divs</div>
+            <div class="col-lg-6 bg-primary text-light">2nd div</div>
+        </div>
+    </div>
+
+    <!-- Compact table -->
+    <div class="container">
+        <div class="row">
+            <div class="container col-lg-6">
+                <h1 class="display-4 text-center text-muted">Compat table</h1>
+                <table class="table table-dark table-hover table-sm" style="margin-top:33px">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Lang</th>
+                            <th>dat</th>
+                            <th>pct</th>
+                            <th>Lang</th>
+                            <th>dat</th>
+                            <th>pct</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Java</td>
+                            <td>2018</td>
+                            <td>75</td>
+                            <td>Java</td>
+                            <td>2018</td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>2016</td>
+                            <td>90</td>
+                            <td>HTML</td>
+                            <td>2016</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>2016</td>
+                            <td>80</td>
+                            <td>CSS</td>
+                            <td>2016</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>CSharp</td>
+                            <td>2017</td>
+                            <td>60</td>
+                            <td>CSharp</td>
+                            <td>2017</td>
+                            <td>60</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <!-- Regular table -->
+            <div class="container col-lg-6">
+                <div class="table-responsive-xl">
+                    <h1 class="display-4 text-muted">Regular table</h1>
+                    <p style="margin:0px; padding:0px">Gets scrollbar on smaller than lg (992px)</p>
+                    <table class="table table-dark table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
+                                <th>Idaet</th>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
+                                <th>Idaet</th>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
+                                <th>Idaet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Java</td>
+                                <td>2018</td>
+                                <td>75</td>
+                                <td>Java</td>
+                                <td>2018</td>
+                                <td>75</td>
+                                <td>Java</td>
+                                <td>2018</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>HTML</td>
+                                <td>2016</td>
+                                <td>90</td>
+                                <td>HTML</td>
+                                <td>2016</td>
+                                <td>90</td>
+                                <td>HTML</td>
+                                <td>2016</td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td>2016</td>
+                                <td>80</td>
+                                <td>CSS</td>
+                                <td>2016</td>
+                                <td>80</td>
+                                <td>CSS</td>
+                                <td>2016</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>CSharp</td>
+                                <td>2017</td>
+                                <td>60</td>
+                                <td>CSharp</td>
+                                <td>2017</td>
+                                <td>60</td>
+                                <td>CSharp</td>
+                                <td>2017</td>
+                                <td>60</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <!-- Images -->
+    <div class="container text-center">
+        <h1 class="display-4 text-center">Fluid Image</h1>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Photos</a></li>
+            <li class="breadcrumb-item"><a href="#">Trackday</a></li>
+            <li class="breadcrumb-item active">Grobnik 2018</li>
+        </ul>
+        <div class="row text-center">
+            <div class="container-fluid">
+                <img src="track.jpg" class="img-fluid rounded img-thumbnail m-2" width="500" />
+                <img src="track2.jpg" class="img-fluid rounded img-thumbnail m-2" width="500" />
+            </div>
+        </div>
+    </div>
+    <br />
+    <!-- folders and content-->
+    <div class="container">
+        <ul class="list-group">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light d-flex justify-content-between align-items-center">
+            Track Photos<span class="badge badge-primary badge-pill">99+</span></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light d-flex justify-content-between align-items-center">
+            Promo Photos<span class="badge badge-primary badge-pill">44</span></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light d-flex justify-content-between align-items-center">
+            Gear Photos<span class="badge badge-primary badge-pill">16</span></a>
+        </ul>
+    </div>
+
+    <br />
+
+
+    <!-- alerts -->
+
+    <div class="container">
+        <div class="alert alert-success alert-dismissible my-3">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            Simple <strong>alert</strong> with close button
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="alert alert-danger my-3">
+            This is an <strong>ERROR</strong> alert! You can't close it (missing alert-dismissible)
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="alert alert-info alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            This alert uses <strong>fade/show</strong> class when closing
+        </div>
+    </div>
+
+    <!-- btns -->
+    <div class="container">
+        <button class="btn btn-primary">
+            <span class="spinner-border">&nbsp;&nbsp;&nbsp;:}</span> Loading...
+        </button>
+    </div>
+    <div class="container">
+        <br />
+        <p>Grouped buttons:&nbsp;&nbsp;<span class="badge badge-warning">New and Improved!</span></p>
+    </div>
+    <div class="container">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Link1</button>
+            <button type="button" class="btn btn-primary">Link2</button>
+            <button type="button" class="btn btn-primary">Link3</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">Link1</button>
+            <button type="button" class="btn btn-danger">Link2</button>
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Link3</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link4</a>
+                <a class="dropdown-item" href="#">Link5</a>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <!-- Progress bars -->
+
+    <div class="container col-lg-4">
+        <p>Animated barz:</p>
+        <div class="progress">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:70%"></div>
+        </div>
+    </div>
+    <br />
+
+    <!-- pagination -->
+
+    <div class="container">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
+
+
