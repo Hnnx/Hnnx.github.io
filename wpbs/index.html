@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>BS Training Grounds</title>
@@ -10,6 +10,57 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="pray.png" width="20" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseID">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapseID">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel >:( -->
+    <div id="slides" class="carousel slide" data-ride="carousel" data-role="content">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner mx-2">
+            <div class="carousel-item active">
+                <img class="d-block mx-auto img-fluid" src="track.jpg" width="1200" />
+            </div>
+            <div class="carousel-item">
+                <img class="d-block mx-auto img-fluid" src="track2.jpg" width="1200" />
+            </div>
+            <div class="carousel-item">
+                <img class="d-block mx-auto img-fluid" src="track.jpg" width="1200" />
+            </div>
+        </div>
+    </div>
+
+
+   <!-- jumbo -->
+
+
     <div class="jumbotron jumbotron-fluid">
         <h1 class="display-3 text-center">BS Training Grounds</h1>
     </div>
@@ -91,7 +142,7 @@
 
             <!-- Regular table -->
             <div class="container col-lg-6">
-                <div class="table-responsive-xl">
+                <div class="table-responsive-xl text-center">
                     <h1 class="display-4 text-muted">Regular table</h1>
                     <p style="margin:0px; padding:0px">Gets scrollbar on smaller than lg (992px)</p>
                     <table class="table table-dark table-hover">
