@@ -1,0 +1,7 @@
+.bw{
+    filter:grayscale(100%);
+}
+
+.smallerItalic{
+    font-style:italic;
+}
